@@ -6,6 +6,7 @@ This folder contains two python files (setrun.py, setplot.py) and one Makefile t
   * [Path & Landfall](#path--landfall)
   * [Storm surge](#storm-surge)
   * [Rainfall & Flooding](#rainfall--flooding)
+- [General Code Execution Guide](#general-code-execution-guide)
 - [Topography & Bathymetry Data](#topography--bathymetry-data)
 - [Storm Data](#storm-data)
 - [GeoClaw Parameters](#geoclaw-parameters)
@@ -31,10 +32,11 @@ Elsa produced storm surge inundation levels of 1 ft to 3 ft above normally dry g
 ### Rainfall & Flooding
 Elsa produced a series of heavy rainfalls along its path involing the eastern US. In west Florida, a large region encountered a 3–7 inches of rain fell. Several monitoring sites across southwest Florida recorded rainfall amount of 8–11 inches. Rainfall amounts of 3–7 inches were observed in the Lower Florida Keys, with the highest accumulation occurring in Key West. Significant flooding occurred in multiple areas of Key West as a heavy rainband set up over the island.
 
-If running this example, download setrun.py, setplot.py, and Makefile to the appropriate directory. Execute `$ make all` or `$ make .plots` to compile the code, run the simulation, and plot the results. If problems will be encountered, please refer to <a href="http://www.clawpack.org/quick_surge.html?highlight=storm%20surge" target="_blank">Storm Surge Guide</a> for possible solutions. 
-
 *Reference: National Hurricane Center Tropical Cyclone Report*
 (https://www.nhc.noaa.gov/data/tcr/AL052021_Elsa.pdf)
+
+## General Code Execution Guide
+If running this example, download setrun.py, setplot.py, and Makefile to the appropriate directory. Execute `$ make all` or `$ make .plots` to compile the code, run the simulation, and plot the results. If problems will be encountered, please refer to <a href="http://www.clawpack.org/quick_surge.html?highlight=storm%20surge" target="_blank">Storm Surge Guide</a> for possible solutions. 
 
 ## Topography & Bathymetry Data
 Topography data was obtained from:
