@@ -2,20 +2,7 @@
 This folder contains two python files (setrun.py, setplot.py) and one Makefile to simulate storm bevavior of hurricane Elsa in July 2021.
 
 ## Table of contents
-- [Hurricane Elsa Information](##Hurricane-Elsa-Information)
-  * [Path & Landfall](###Path-&-Landfall)
-  * [Storm surge](###Storm-surge)
-  * [Rainfall & Flooding](###Rainfall-&-Flooding)
-- [Topography & Bathymetry Data](##Topography-&-Bathymetry-Data)
-- [Storm Data](##Storm-Data)
-- [GeoClaw Parameters](##GeoClaw-Parameters)
-  * [Landfall](###Landfall)
-  * [Guages](###Guages)
-  * [Observed Surge Data](###Observed-Surge-Data)
-  * [AMRClaw](###AMRClaw)
-- [Validation Result](##Validation-Result)
-  * [Station 1](###Station-1)
-- [Conclusion](##Conclusion)
+ * [Conclusion](##Conclusion)
 
 ## Hurricane Elsa Information
 ### Path & Landfall
