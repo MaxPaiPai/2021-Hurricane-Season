@@ -8,7 +8,7 @@ This folder contains two python files (setrun.py, setplot.py) and one Makefile t
     + [Storm surge](###storm-surge)
     + [Rainfall & Flooding](###rainfall---flooding)
   * [Topography & Bathymetry Data](##topography---bathymetry-data)
-  * [Storm Data](##storm-data)
+  * [Storm Data](##Storm-Data)
   * [GeoClaw Parameters](#geoclaw-parameters)
     + [Landfall](#landfall)
     + [Guages](###guages)
