@@ -9,7 +9,7 @@ This folder contains two python files (setrun.py, setplot.py) and one Makefile t
 - [Topography & Bathymetry Data](#topography--bathymetry-data)
 - [Storm Data](#storm-data)
 - [GeoClaw Parameters](#geoclaw-parameters)
-  * [Landfall](#landfall)
+  * [Landfall](#landfall--time-range)
   * [Guages](#guages)
   * [AMRClaw](#amrclaw)
 - [Observed Surge Data](#observed-surge-data)
@@ -59,7 +59,7 @@ atcf_path = os.path.join(data_dir, “bal052021.dat”)
 ```
 
 ## GeoClaw Parameters
-### Landfall
+### Landfall & Time Range
 Time of landfall was set in the simulation to be 26 August, 0400 UTC. Simulation ran from 4 days before landfall to 5 days after.
 ### Guages
 Gauges were selected in the NOAA Inundations dashboard:
