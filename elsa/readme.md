@@ -42,6 +42,7 @@ Regions of topography data used was a rectangle region (West 90°, East 65°, No
 
 Currently, topography data is stored in the author's google drive. It can be accessed with a columbia email and can be fetched in setrun.py by modifying codes in topography section similar to this:
 ```python
+# Fetch topo data
 clawutil.data.get_remote_file(
            "https://drive.google.com/uc?export=download&id=1e8M_4m_y6yFJk9nOhwkPv9IJj8FotmQK")
 ```
