@@ -1,6 +1,22 @@
 # Storm Report: Hurricane Elsa `AL052021`
 This folder contains two python files (setrun.py, setplot.py) and one Makefile to simulate storm bevavior of hurricane Elsa in July 2021.
 
+## Table of contents
+- [Hurricane Elsa Information](##Hurricane-Elsa-Information)
+  * [Path & Landfall](###Path-&-Landfall)
+  * [Storm surge](###Storm-surge)
+  * [Rainfall & Flooding](###Rainfall-&-Flooding)
+-[Topography & Bathymetry Data](##Topography-&-Bathymetry-Data)
+-[Storm Data](##Storm-Data)
+-[GeoClaw Parameters](##GeoClaw-Parameters)
+  * [Landfall](###Landfall)
+  * [Guages](###Guages)
+  * [Observed Surge Data](###Observed-Surge-Data)
+  * [AMRClaw](###AMRClaw)
+-[Validation Result](##Validation-Result)
+  * [Station 1](###Station-1)
+-[Conclusion](##Conclusion)
+
 ## Hurricane Elsa Information:
 ### Path & Landfall
 Elsa was a category 1 hurricane formed over the central tropical Atlantic. Elsa affected many countries including Barbados, St. Lucia, St. Vincent and the Grenadines, Martinique, the Dominican Republic, Haiti, Cuba, and the United States. It caused around $1 billion in total damage and was responsible for 13 direct fatalities. Elsa affected the Florida Keys and the west coast of Florida along its path before making landfall in the Big Bend region on 6th and 7th July. After the Florida landfall, Elsa turned toward the northeast and accelerated towards the U.S. eastern seaboard. 
