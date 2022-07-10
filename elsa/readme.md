@@ -20,6 +20,7 @@ This folder contains two python files (setrun.py, setplot.py) and one Makefile t
   * [Station 4-Port Manatee, FL](#station-4-port-manatee-fl)
   * [Station 5-Naples, FL](#station-5-naples-fl)
   * [Station 6-Key West, FL](#station-6-key-west-fl)
+  * [Result Interpretation](#result-interpretation)
 - [Conclusion](#conclusion)
 
 ## Hurricane Elsa Information
@@ -101,7 +102,7 @@ Key West, FL `ID: 8724580` experienced a storm surge of approximately 1 meter. G
 
 ![Station6_Key West](./images/station6_keywest.png)
 
-
+### Result Interpretation
 Significant discrepancies in results may stem from the gauges being located in “dry cells” in the simulation. Harvey’s historic rains and the resulting flooding are other significant contributors to the measured storm surge; these factors are not accounted for in the GeoClaw simulation.
 
 ## Conclusion
