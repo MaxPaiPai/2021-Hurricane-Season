@@ -6,16 +6,16 @@ This folder contains two python files (setrun.py, setplot.py) and one Makefile t
   * [Path & Landfall](###Path-&-Landfall)
   * [Storm surge](###Storm-surge)
   * [Rainfall & Flooding](###Rainfall-&-Flooding)
--[Topography & Bathymetry Data](##Topography-&-Bathymetry-Data)
--[Storm Data](##Storm-Data)
--[GeoClaw Parameters](##GeoClaw-Parameters)
+- [Topography & Bathymetry Data](##Topography-&-Bathymetry-Data)
+- [Storm Data](##Storm-Data)
+- [GeoClaw Parameters](##GeoClaw-Parameters)
   * [Landfall](###Landfall)
   * [Guages](###Guages)
   * [Observed Surge Data](###Observed-Surge-Data)
   * [AMRClaw](###AMRClaw)
--[Validation Result](##Validation-Result)
+- [Validation Result](##Validation-Result)
   * [Station 1](###Station-1)
--[Conclusion](##Conclusion)
+- [Conclusion](##Conclusion)
 
 ## Hurricane Elsa Information:
 ### Path & Landfall
