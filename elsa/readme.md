@@ -67,6 +67,8 @@ The observed gauge data for sea level at each location was de-tided using the `f
 ### Station 1
 Freeport Harbor, TX `ID: 8772471` experienced a storm surge of approximately 1 meter. GeoClaw predicted approximately 0.3 meters. 
 
+![Station 1 result](/images/station1_cedarkey.png)
+
 Significant discrepancies in results may stem from the gauges being located in “dry cells” in the simulation. Harvey’s historic rains and the resulting flooding are other significant contributors to the measured storm surge; these factors are not accounted for in the GeoClaw simulation.
 
 ## Conclusion
