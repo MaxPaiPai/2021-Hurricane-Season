@@ -14,12 +14,12 @@ This folder contains two python files (setrun.py, setplot.py) and one Makefile t
   * [AMRClaw](#amrclaw)
 - [Observed Surge Data](#observed-surge-data)
 - [Validation Result](#validation-result)
-  * [Station 1](#station-1)
-  * [Station 2](#station-2)
-  * [Station 3](#station-3)
-  * [Station 4](#station-4)
-  * [Station 5](#station-5)
-  * [Station 6](#station-6)
+  * [Station 1-Cedar Key, FL](#station-1)
+  * [Station 2-Clearwater Beach, FL](#station-2)
+  * [Station 3-Old Port Tampa, FL](#station-3)
+  * [Station 4-Port Manatee, FL](#station-4)
+  * [Station 5-Naples, FL](#station-5)
+  * [Station 6-Key West, FL](#station-6)
 - [Conclusion](#conclusion)
 
 ## Hurricane Elsa Information
@@ -70,27 +70,27 @@ https://tidesandcurrents.noaa.gov/map/index.html
 To compare simulation surge data by GeoClaw, we introduced the observed surge data using `clawpack.geoclaw.util.fetch_noaa_tide_data` along with each guage's station ID. When plotting the observed surge data, we explicitly deduct the tide amount from sea level at each location to make the data solely representing storm surge.
 
 ## Validation Result
-### Station 1
+### Station 1-Cedar Key, FL
 Cedar Key, FL `ID: 8727520` experienced a storm surge of approximately 1 meter. GeoClaw predicted approximately 0.3 meters. 
 
 ![Station1_Cedar Key](./images/station1_cedarkey.png)
-### Station 2
+### Station 2-Clearwater Beach, FL
 Clearwater Beach, FL `ID: 8726724` experienced a storm surge of approximately 1 meter. GeoClaw predicted approximately 0.3 meters. 
 
 ![Station2_Clear Water Beach](./images/station2_clearwaterbeach.png)
-### Station 3
+### Station 3-Old Port Tampa, FL
 Old Port Tampa, FL `ID: 8726607` experienced a storm surge of approximately 1 meter. GeoClaw predicted approximately 0.3 meters. 
 
 ![Station3_Old Port Tampa](./images/station3_oldporttampa.png)
-### Station 4
+### Station 4-Port Manatee, FL
 Port Manatee, FL `ID: 8726384` experienced a storm surge of approximately 1 meter. GeoClaw predicted approximately 0.3 meters. 
 
 ![Station4_Port Manatee](./images/station4_portmanatee.png)
-### Station 5
+### Station 5-Naples, FL
 Naples, FL `ID: 8725110` experienced a storm surge of approximately 1 meter. GeoClaw predicted approximately 0.3 meters. 
 
 ![Station5_Naples](./images/station5_naples.png)
-### Station 6
+### Station 6-Key West, FL
 Key West, FL `ID: 8724580` experienced a storm surge of approximately 1 meter. GeoClaw predicted approximately 0.3 meters. 
 
 ![Station6_Key West](./images/station6_keywest.png)
