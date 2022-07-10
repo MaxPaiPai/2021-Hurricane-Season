@@ -14,7 +14,7 @@ This folder contains two python files (setrun.py, setplot.py) and one Makefile t
   * [AMRClaw](#amrclaw)
 - [Observed Surge Data](#observed-surge-data)
 - [Validation Result](#validation-result)
-  * [Station 1-Cedar Key, FL](#station-1)
+  * [Station 1-Cedar Key, FL](#station-1-cedar-key--fl)
   * [Station 2-Clearwater Beach, FL](#station-2)
   * [Station 3-Old Port Tampa, FL](#station-3)
   * [Station 4-Port Manatee, FL](#station-4)
