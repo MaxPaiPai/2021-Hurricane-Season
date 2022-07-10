@@ -11,13 +11,13 @@ This folder contains two python files (setrun.py, setplot.py) and one Makefile t
   * [GeoClaw Parameters](#geoclaw-parameters)
     + [Landfall](#landfall)
     + [Guages](###Guages)
-    + Observed Surge Data](###Observed-Surge-Data)
+    + [Observed Surge Data](###Observed-Surge-Data)
     + [AMRClaw](###AMRClaw)
   * [Validation Result](#validation-result)
     + [Station 1](#station-1)
   * [Conclusion](#conclusion)
 
-## Hurricane Elsa Information:
+## Hurricane Elsa Information
 ### Path & Landfall
 Elsa was a category 1 hurricane formed over the central tropical Atlantic. Elsa affected many countries including Barbados, St. Lucia, St. Vincent and the Grenadines, Martinique, the Dominican Republic, Haiti, Cuba, and the United States. It caused around $1 billion in total damage and was responsible for 13 direct fatalities. Elsa affected the Florida Keys and the west coast of Florida along its path before making landfall in the Big Bend region on 6th and 7th July. After the Florida landfall, Elsa turned toward the northeast and accelerated towards the U.S. eastern seaboard. 
 ### Storm surge
