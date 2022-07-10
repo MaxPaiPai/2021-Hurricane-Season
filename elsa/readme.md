@@ -65,6 +65,12 @@ Time of landfall was set in the simulation to be 7 August, 1400 UTC. Time range 
 Gauges were selected in the NOAA Inundations dashboard:
 https://tidesandcurrents.noaa.gov/map/index.html
 ### AMRClaw
+AMRClaw is a very powerful algorithm to refine areas for analysis. After merging the algorithm in setrun.py, we will be able to have a high resolution of regions which will effectively solve bad simulation curves by GeoClaw due to wrongly appeared dry cells from low resolution. One can include or exclude AMRClaw algorithm by modifying codes in setrun.py similar to
+```python
+from clawpack.clawutil import clawdata
+rundata = clawdata.ClawRunData(claw_pkg, num_dim)
+```
+One may also want to modify AMR parameters like `amr_levels_max` and `refinement_ratios` in a more customized way. More information regarding parameter can be found in the documentation here: <a href="https://www.clawpack.org/setrun_amrclaw.html#setrun-amrclaw" target="_blank">AMRClaw Information</a>.
 
 ## Observed Surge Data
 To compare simulation surge data by GeoClaw, we introduced the observed surge data using `clawpack.geoclaw.util.fetch_noaa_tide_data` along with each guage's station ID. When plotting the observed surge data, we explicitly deduct the tide amount from sea level at each location to make the data solely representing storm surge.
