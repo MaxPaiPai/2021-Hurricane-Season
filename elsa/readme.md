@@ -60,7 +60,7 @@ atcf_path = os.path.join(data_dir, “bal052021.dat”)
 
 ## GeoClaw Parameters
 ### Landfall & Time Range
-Time of landfall was set in the simulation to be 26 August, 0400 UTC. Simulation ran from 4 days before landfall to 5 days after.
+Time of landfall was set in the simulation to be 7 August, 1400 UTC. Time range of simulation was set to be 2 days (48 hours) before landfall and 1 day (24 hours) after landfall.
 ### Guages
 Gauges were selected in the NOAA Inundations dashboard:
 https://tidesandcurrents.noaa.gov/map/index.html
@@ -71,27 +71,27 @@ To compare simulation surge data by GeoClaw, we introduced the observed surge da
 
 ## Validation Result
 ### Station 1
-Freeport Harbor, TX `ID: 8772471` experienced a storm surge of approximately 1 meter. GeoClaw predicted approximately 0.3 meters. 
+Cedar Key, FL `ID: 8727520` experienced a storm surge of approximately 1 meter. GeoClaw predicted approximately 0.3 meters. 
 
 ![Station1_Cedar Key](./images/station1_cedarkey.png)
 ### Station 2
-Freeport Harbor, TX `ID: 8772471` experienced a storm surge of approximately 1 meter. GeoClaw predicted approximately 0.3 meters. 
+Clearwater Beach, FL `ID: 8726724` experienced a storm surge of approximately 1 meter. GeoClaw predicted approximately 0.3 meters. 
 
 ![Station2_Clear Water Beach](./images/station2_clearwaterbeach.png)
 ### Station 3
-Freeport Harbor, TX `ID: 8772471` experienced a storm surge of approximately 1 meter. GeoClaw predicted approximately 0.3 meters. 
+Old Port Tampa, FL `ID: 8726607` experienced a storm surge of approximately 1 meter. GeoClaw predicted approximately 0.3 meters. 
 
 ![Station3_Old Port Tampa](./images/station3_oldporttampa.png)
 ### Station 4
-Freeport Harbor, TX `ID: 8772471` experienced a storm surge of approximately 1 meter. GeoClaw predicted approximately 0.3 meters. 
+Port Manatee, FL `ID: 8726384` experienced a storm surge of approximately 1 meter. GeoClaw predicted approximately 0.3 meters. 
 
 ![Station4_Port Manatee](./images/station4_portmanatee.png)
 ### Station 5
-Freeport Harbor, TX `ID: 8772471` experienced a storm surge of approximately 1 meter. GeoClaw predicted approximately 0.3 meters. 
+Naples, FL `ID: 8725110` experienced a storm surge of approximately 1 meter. GeoClaw predicted approximately 0.3 meters. 
 
 ![Station5_Naples](./images/station5_naples.png)
 ### Station 6
-Freeport Harbor, TX `ID: 8772471` experienced a storm surge of approximately 1 meter. GeoClaw predicted approximately 0.3 meters. 
+Key West, FL `ID: 8724580` experienced a storm surge of approximately 1 meter. GeoClaw predicted approximately 0.3 meters. 
 
 ![Station6_Key West](./images/station6_keywest.png)
 
