@@ -11,8 +11,8 @@ This folder contains two python files (setrun.py, setplot.py) and one Makefile t
 - [GeoClaw Parameters](#geoclaw-parameters)
   * [Landfall](#landfall)
   * [Guages](#guages)
-  * [Observed Surge Data](#observed-surge-data)
   * [AMRClaw](#amrclaw)
+- [Observed Surge Data](#observed-surge-data)
 - [Validation Result](#validation-result)
   * [Station 1](#station-1)
   * [Station 2](#station-2)
@@ -63,10 +63,10 @@ Time of landfall was set in the simulation to be 26 August, 0400 UTC. Simulation
 ### Guages
 Gauges were selected in the NOAA Inundations dashboard:
 https://tidesandcurrents.noaa.gov/map/index.html
-### Observed Surge Data
-The observed gauge data for sea level at each location was de-tided using the `fetch_noaa_tide_data()` method and plotted against the predicted storm surge by GeoClaw.
 ### AMRClaw
 
+## Observed Surge Data
+The observed gauge data for sea level at each location was de-tided using the `fetch_noaa_tide_data()` method and plotted against the predicted storm surge by GeoClaw.
 
 ## Validation Result
 ### Station 1
