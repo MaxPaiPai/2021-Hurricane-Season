@@ -15,11 +15,11 @@ This folder contains two python files (setrun.py, setplot.py) and one Makefile t
 - [Observed Surge Data](#observed-surge-data)
 - [Validation Result](#validation-result)
   * [Station 1-Cedar Key, FL](#station-1-cedar-key-fl)
-  * [Station 2-Clearwater Beach, FL](#station-2)
-  * [Station 3-Old Port Tampa, FL](#station-3)
-  * [Station 4-Port Manatee, FL](#station-4)
-  * [Station 5-Naples, FL](#station-5)
-  * [Station 6-Key West, FL](#station-6)
+  * [Station 2-Clearwater Beach, FL](#station-2-clearwater-beach-fl)
+  * [Station 3-Old Port Tampa, FL](#station-3-old-port-tampa-fl)
+  * [Station 4-Port Manatee, FL](#station-4-port-manatee-fl)
+  * [Station 5-Naples, FL](#station-5-naples-fl)
+  * [Station 6-Key West, FL](#station-6-key-west-fl)
 - [Conclusion](#conclusion)
 
 ## Hurricane Elsa Information
