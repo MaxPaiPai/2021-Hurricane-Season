@@ -70,7 +70,7 @@ AMRClaw is a very powerful algorithm to refine areas for analysis. After merging
 from clawpack.clawutil import clawdata
 rundata = clawdata.ClawRunData(claw_pkg, num_dim)
 ```
-One may also want to modify AMR parameters like `amr_levels_max` and `refinement_ratios` in a more customized way. More information regarding parameter can be found in the documentation here: <a href="https://www.clawpack.org/setrun_amrclaw.html#setrun-amrclaw" target="_blank">AMRClaw Information</a>.
+One may also want to modify AMR parameters like `amr_levels_max` and `refinement_ratios` in a more customized way. In this example, `amr_levels_max` was set to be `7` and `refinement_ratios` was set to be `[2, 2, 2, 3, 4, 4, 4]`. More information regarding parameter can be found in the documentation here: <a href="https://www.clawpack.org/setrun_amrclaw.html#setrun-amrclaw" target="_blank">AMRClaw Information</a>.
 
 ## Observed Surge Data
 To compare simulation surge data by GeoClaw, we introduced the observed surge data using `clawpack.geoclaw.util.fetch_noaa_tide_data` along with each guage's station ID. When plotting the observed surge data, we explicitly deduct the tide amount from sea level at each location to make the data solely representing storm surge.
