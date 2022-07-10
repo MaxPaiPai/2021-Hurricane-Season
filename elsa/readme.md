@@ -9,7 +9,7 @@ This folder contains two python files (setrun.py, setplot.py) and one Makefile t
 - [Topography & Bathymetry Data](#topography--bathymetry-data)
 - [Storm Data](#storm-data)
 - [GeoClaw Parameters](#geoclaw-parameters)
-  * [Landfall](#landfall--time-range)
+  * [Landfall & Time Range](#landfall--time-range)
   * [Guages](#guages)
   * [AMRClaw](#amrclaw)
 - [Observed Surge Data](#observed-surge-data)
