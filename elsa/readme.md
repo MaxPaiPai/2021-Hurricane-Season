@@ -67,7 +67,28 @@ The observed gauge data for sea level at each location was de-tided using the `f
 ### Station 1
 Freeport Harbor, TX `ID: 8772471` experienced a storm surge of approximately 1 meter. GeoClaw predicted approximately 0.3 meters. 
 
-![Station1](./images/station1_cedarkey.png)
+![Station1_Cedar Key](./images/station1_cedarkey.png)
+### Station 2
+Freeport Harbor, TX `ID: 8772471` experienced a storm surge of approximately 1 meter. GeoClaw predicted approximately 0.3 meters. 
+
+![Station2_Clear Water Beach](./images/station2_clearwaterbeach.png)
+### Station 3
+Freeport Harbor, TX `ID: 8772471` experienced a storm surge of approximately 1 meter. GeoClaw predicted approximately 0.3 meters. 
+
+![Station3_Old Port Tampa](./images/station3_oldporttampa.png)
+### Station 4
+Freeport Harbor, TX `ID: 8772471` experienced a storm surge of approximately 1 meter. GeoClaw predicted approximately 0.3 meters. 
+
+![Station4_Port Manatee](./images/station4_portmanatee.png)
+### Station 5
+Freeport Harbor, TX `ID: 8772471` experienced a storm surge of approximately 1 meter. GeoClaw predicted approximately 0.3 meters. 
+
+![Station5_Naples](./images/station5_naples.png)
+### Station 6
+Freeport Harbor, TX `ID: 8772471` experienced a storm surge of approximately 1 meter. GeoClaw predicted approximately 0.3 meters. 
+
+![Station6_Key West](./images/station6_keywest.png)
+
 
 Significant discrepancies in results may stem from the gauges being located in “dry cells” in the simulation. Harvey’s historic rains and the resulting flooding are other significant contributors to the measured storm surge; these factors are not accounted for in the GeoClaw simulation.
 
