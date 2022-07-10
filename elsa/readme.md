@@ -3,7 +3,7 @@ This folder contains two python files (setrun.py, setplot.py) and one Makefile t
 
 ## Table of contents
 - [Hurricane Elsa Information](#hurricane-elsa-information)
-  * [Path & Landfall](#path-&-landfall)
+  * [Path & Landfall](#path-\&-landfall)
   * [Storm surge](#storm-surge)
   * [Rainfall & Flooding](#rainfall-&-flooding)
 - [Topography & Bathymetry Data](#topography---bathymetry-data)
