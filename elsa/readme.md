@@ -80,35 +80,35 @@ To compare simulation surge data by GeoClaw, we introduced the observed surge da
 
 ## Validation Result
 ### Station 1-Cedar Key, FL
-Cedar Key, FL `ID: 8727520` experienced a storm surge of approximately 1 meter. GeoClaw predicted approximately 0.3 meters. 
+Cedar Key, FL `ID: 8727520` experienced a storm surge of approximately 0.75 meter. GeoClaw predicted approximately 0.80 meters. 
 
 ![Station1_Cedar Key](./images/station1_cedarkey.png)
 ### Station 2-Clearwater Beach, FL
-Clearwater Beach, FL `ID: 8726724` experienced a storm surge of approximately 1 meter. GeoClaw predicted approximately 0.3 meters. 
+Clearwater Beach, FL `ID: 8726724` experienced a storm surge of approximately 0.50 meter. GeoClaw predicted approximately 0.25 meters. 
 
 ![Station2_Clear Water Beach](./images/station2_clearwaterbeach.png)
 ### Station 3-Old Port Tampa, FL
-Old Port Tampa, FL `ID: 8726607` experienced a storm surge of approximately 1 meter. GeoClaw predicted approximately 0.3 meters. 
+Old Port Tampa, FL `ID: 8726607` experienced a storm surge of approximately 0.65 meter. GeoClaw predicted approximately 0.55 meters. 
 
 ![Station3_Old Port Tampa](./images/station3_oldporttampa.png)
 ### Station 4-Port Manatee, FL
-Port Manatee, FL `ID: 8726384` experienced a storm surge of approximately 1 meter. GeoClaw predicted approximately 0.3 meters. 
+Port Manatee, FL `ID: 8726384` experienced a storm surge of approximately 0.50 meter. GeoClaw predicted approximately 0.40 meters. 
 
 ![Station4_Port Manatee](./images/station4_portmanatee.png)
 ### Station 5-Naples, FL
-Naples, FL `ID: 8725110` experienced a storm surge of approximately 1 meter. GeoClaw predicted approximately 0.3 meters. 
+Naples, FL `ID: 8725110` experienced a storm surge of approximately 0.60 meter. GeoClaw predicted approximately 0.20 meters. 
 
 ![Station5_Naples](./images/station5_naples.png)
 ### Station 6-Key West, FL
-Key West, FL `ID: 8724580` experienced a storm surge of approximately 1 meter. GeoClaw predicted approximately 0.3 meters. 
+Key West, FL `ID: 8724580` experienced a storm surge of approximately 0.30 meter. GeoClaw predicted approximately 0.08 meters. 
 
 ![Station6_Key West](./images/station6_keywest.png)
 
 ### Result Interpretation
-Significant discrepancies in results may stem from the gauges being located in “dry cells” in the simulation. Harvey’s historic rains and the resulting flooding are other significant contributors to the measured storm surge; these factors are not accounted for in the GeoClaw simulation.
+Differences in surface level are generally acceptable with maximum error among all guages less than 0.5 meters. 
 
 ## Conclusion
-Storm surges obtained from GeoClaw were generally inconsistent with the observed data. In most cases, the observed storm surge greatly exceeded the amount predicted by the GeoClaw model. The reason for this likely comes from Harvey’s historic rains, which caused significant flooding but are not accounted for in the model. Adjustments to the GeoClaw package to incorporate rainfall may lead to more accurate results.
+Timing and pattern of storm surges obtained from GeoClaw were generally consistent with the observed data. In most cases, the observed storm surge slightly exceeded the amount of which from GeoClaw simulation. The reason for this likely comes from Harvey’s historic rains, which caused significant flooding but are not accounted for in the model. Adjustments to the GeoClaw package to incorporate rainfall may lead to more accurate results.
 
 
 Author: Jinpai (Max) Zhao
