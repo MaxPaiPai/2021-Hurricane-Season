@@ -1,2 +1,2 @@
 ## 2021-Hurricane-Season
-A collection of storm surge simulations and validations for major hurricanes in 2021
+A selection of significant storm surge simulations & validations for hurricanes in 2021 Atlantic Hurricane Season
