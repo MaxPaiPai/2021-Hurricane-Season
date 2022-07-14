@@ -491,12 +491,9 @@ def setgeo(rundata):
             open(atcf_path, 'w') as atcf_unzipped_file:
         atcf_unzipped_file.write(atcf_file.read().decode('ascii'))
 
-    # Uncomment/comment out to use the old version of the Ike storm file
-    # ike = Storm(path="old_ike.storm", file_format="ATCF")
     elsa = Storm(path=atcf_path, file_format="ATCF")
 
     # Calculate landfall time - Need to specify as the file above does not
-    # include this info (8/26/2017 ~4am UTC)
     elsa.time_offset = datetime.datetime(2021, 7, 7, 14)
 
     elsa.write(data.storm_file, file_format='geoclaw')
@@ -516,15 +513,12 @@ def setgeo(rundata):
                                   [numpy.infty, 0.0, -numpy.infty],
                                   [0.030, 0.022]])
 
-    # Texas gulf coast
+    
     data.friction_regions.append([(-99.2, 26.4), (-94.2, 30.4),
                                   [numpy.infty, -10.0, -200.0, -numpy.infty],
                                   [0.030, 0.012, 0.022]])    
     
-    # La-Tex Shelf
-    # data.friction_regions.append([(-98, 25.25), (-90, 30),
-    #                              [numpy.infty, -10.0, -200.0, -numpy.infty],
-    #                              [0.030, 0.012, 0.022]])
+    
 
     return rundata
     # end of function setgeo
