@@ -1,8 +1,8 @@
-# Storm Report: Hurricane Elsa `AL052021`
-This folder contains two python files (setrun.py, setplot.py) and one Makefile to simulate storm bevavior of hurricane Elsa in July 2021.
+# Storm Report: Hurricane Ida `AL092021`
+This folder contains two python files (setrun.py, setplot.py) and one Makefile to simulate storm bevavior of hurricane Ida in August 2021.
 
 ## Table of contents
-- [Hurricane Elsa Information](#hurricane-elsa-information)
+- [Hurricane Ida Information](#hurricane-ida-information)
   * [Path & Landfall](#path--landfall)
   * [Storm surge](#storm-surge)
   * [Rainfall & Flooding](#rainfall--flooding)
@@ -15,25 +15,27 @@ This folder contains two python files (setrun.py, setplot.py) and one Makefile t
   * [AMRClaw](#amrclaw)
 - [Observed Surge Data](#observed-surge-data)
 - [Validation Result](#validation-result)
-  * [Station 1-Cedar Key, FL](#station-1-cedar-key-fl)
-  * [Station 2-Clearwater Beach, FL](#station-2-clearwater-beach-fl)
-  * [Station 3-Old Port Tampa, FL](#station-3-old-port-tampa-fl)
-  * [Station 4-Port Manatee, FL](#station-4-port-manatee-fl)
-  * [Station 5-Naples, FL](#station-5-naples-fl)
-  * [Station 6-Key West, FL](#station-6-key-west-fl)
+  * [Station 1-Pilots Station East, LA](#station-1-pilots-station-east-la)
+  * [Station 2-Grand Isle, LA](#station-2-grand-isle-la)
+  * [Station 3-Eugene Island, LA](#station-3-eugene-island-la)
+  * [Station 4-Bay Waveland Yacht Club, LA](#station-4-bay-waveland-yacht-club-la)
+  * [Station 5-Port Fourchon, LA](#station-5-port-fourchon-la)
   * [Result Interpretation](#result-interpretation)
 - [Conclusion](#conclusion)
 
-## Hurricane Elsa Information
+## Hurricane Ida Information
+
 ### Path & Landfall
 Elsa was a category 1 hurricane formed over the central tropical Atlantic. Elsa affected many countries including Barbados, St. Lucia, St. Vincent and the Grenadines, Martinique, the Dominican Republic, Haiti, Cuba, and the United States. It caused around $1 billion in total damage and was responsible for 13 direct fatalities. Elsa affected the Florida Keys and the west coast of Florida along its path before making landfall in the Big Bend region on 6th and 7th July. After the Florida landfall, Elsa turned toward the northeast and accelerated towards the U.S. eastern seaboard. 
+
 ### Storm surge
 Elsa produced storm surge inundation levels of 1 ft to 3 ft above normally dry ground (AGL) along portions of the west coast of Florida, with the highest water levels occurring along the coasts of Hernando, Citrus, Levy, Dixie, and Taylor Counties at around 2 ft to 3 ft. 
+
 ### Rainfall & Flooding
 Elsa produced a series of heavy rainfalls along its path involing the eastern US. In west Florida, a large region encountered a 3–7 inches of rain fell. Several monitoring sites across southwest Florida recorded rainfall amount of 8–11 inches. Rainfall amounts of 3–7 inches were observed in the Lower Florida Keys, with the highest accumulation occurring in Key West. Significant flooding occurred in multiple areas of Key West as a heavy rainband set up over the island.
 
 *Reference: National Hurricane Center Tropical Cyclone Report*
-(https://www.nhc.noaa.gov/data/tcr/AL052021_Elsa.pdf)
+(https://www.nhc.noaa.gov/data/tcr/AL092021_Ida.pdf)
 
 ## General Code Execution Guide
 If running this example, download setrun.py, setplot.py, and Makefile to the appropriate directory. Execute `$ make all` or `$ make .plots` to compile the code, run the simulation, and plot the results. If problems will be encountered, please refer to <a href="http://www.clawpack.org/quick_surge.html?highlight=storm%20surge" target="_blank">Storm Surge Guide</a> for possible solutions. 
@@ -79,30 +81,25 @@ One may also want to modify AMR parameters like `amr_levels_max` and `refinement
 To compare simulation surge data by GeoClaw, we introduced the observed surge data using `clawpack.geoclaw.util.fetch_noaa_tide_data` along with each guage's station ID. When plotting the observed surge data, we explicitly deduct the tide amount from sea level at each location to make the data solely representing storm surge.
 
 ## Validation Result
-### Station 1-Cedar Key, FL
-Cedar Key, FL `ID: 8727520` experienced a storm surge of approximately 0.75 meter. GeoClaw predicted approximately 0.80 meters. 
-
+### Station 1-Pilots Station East, LA
+Cedar Key, FL `ID: 8760922` experienced a storm surge of approximately 0.75 meter. GeoClaw predicted approximately 0.80 meters. 
 ![Station1_Cedar Key](./images/station1_cedarkey.png)
-### Station 2-Clearwater Beach, FL
-Clearwater Beach, FL `ID: 8726724` experienced a storm surge of approximately 0.50 meter. GeoClaw predicted approximately 0.25 meters. 
 
+### Station 2-Grand Isle, LA
+Clearwater Beach, FL `ID: 8761724` experienced a storm surge of approximately 0.50 meter. GeoClaw predicted approximately 0.25 meters. 
 ![Station2_Clear Water Beach](./images/station2_clearwaterbeach.png)
-### Station 3-Old Port Tampa, FL
-Old Port Tampa, FL `ID: 8726607` experienced a storm surge of approximately 0.65 meter. GeoClaw predicted approximately 0.55 meters. 
 
+### Station 3-Eugene Island, LA
+Old Port Tampa, FL `ID: 8764314` experienced a storm surge of approximately 0.65 meter. GeoClaw predicted approximately 0.55 meters. 
 ![Station3_Old Port Tampa](./images/station3_oldporttampa.png)
-### Station 4-Port Manatee, FL
-Port Manatee, FL `ID: 8726384` experienced a storm surge of approximately 0.50 meter. GeoClaw predicted approximately 0.40 meters. 
 
+### Station 4-Bay Waveland Yacht Club, LA
+Port Manatee, FL `ID: 8747437` experienced a storm surge of approximately 0.50 meter. GeoClaw predicted approximately 0.40 meters. 
 ![Station4_Port Manatee](./images/station4_portmanatee.png)
-### Station 5-Naples, FL
-Naples, FL `ID: 8725110` experienced a storm surge of approximately 0.60 meter. GeoClaw predicted approximately 0.20 meters. 
 
+### Station 5-Port Fourchon, LA
+Naples, FL `ID: 8762075` experienced a storm surge of approximately 0.60 meter. GeoClaw predicted approximately 0.20 meters. 
 ![Station5_Naples](./images/station5_naples.png)
-### Station 6-Key West, FL
-Key West, FL `ID: 8724580` experienced a storm surge of approximately 0.30 meter. GeoClaw predicted approximately 0.08 meters. 
-
-![Station6_Key West](./images/station6_keywest.png)
 
 ### Result Interpretation
 Differences in surface level are reasonable and acceptable with maximum error among all guages less than 0.5 meters. Individual difference are correlated to rainfall and flooding amount which was not included in the GeoClaw simulation due to their complexity and unpredictability. However, notice there's also a discrepancy of timing between major surge at Key West station. The reason is Key West experienced the most intense rainfall and flooding which explains the surge on observed data. Note that there's little or no precipitation at hurricane eye which explains the surface drop for observed data but a surge on simulation data.
