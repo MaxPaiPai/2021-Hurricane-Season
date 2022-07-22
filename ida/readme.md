@@ -29,7 +29,7 @@ This folder contains two python files (setrun.py, setplot.py) and one Makefile t
 Ida was a category 4 hurricane. It caused severe damage when it made landfall in southeastern Louisiana before its landfall in western Cuba as a category 1 hurricane. Ida later became an extratropical low that caused heavy rain and deadly flooding in the northeastern United States.
 
 ### Storm surge
-Ida produced a devastating storm surge that penetrated well inland from the immediate coastline across portions of southeastern Louisiana, including on both the east and west banks of the Mississippi River and bordering portions of Lake Pontchartrain. Storm surge levels were high enough in some locations to overtop local levee systems. The analysis of peak inundation levels indicated below are based on tide and stream gauges, high water mark surveys, and storm surge hindcasts produced by the NHC Storm Surge Unit. Table 3 and Figs. 6a and 6b (zoomed into the highest-impacted area) provide observations from various tide stations, water level sensors, and surveyed high water marks along much of the U.S. northern Gulf coast.
+Ida produced a very severe storm surge that penetrated inland from the immediate coastline across portions of southeastern Louisiana, including on both the east and west banks of the Mississippi River and bordering portions of Lake Pontchartrain. Storm surge levels were enough high in some areas to overtop local levee systems. 
 
 ### Rainfall & Flooding
 Ida produced widespread rainfall along its track, with four areas of significant totals: 1) the US. Gulf coast states, 2) the US. Mid-Atlantic and New England states, 3) western Cuba, and 4) the Canadian Maritimes provinces (Tables 3 and 4, as well as Fig. 8).
@@ -55,7 +55,7 @@ clawutil.data.get_remote_file(
 ```
 
 ## Storm Data
-Storm specific data for Hurricane Elsa was retrieved from NOAA’s storm data archive:
+Storm specific data for Hurricane Ida was retrieved from NOAA’s storm data archive:
 http://ftp.nhc.noaa.gov/atcf/archive/2021/bal092021.dat.gz
 
 In setrun.py, data can be directly fetched by modifying codes in storm data section similar to this:
