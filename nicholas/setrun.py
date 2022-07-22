@@ -529,4 +529,4 @@ if __name__ == '__main__':
     else:
         rundata = setrun()
 
-    rundata.write()
+    rundata.write() 
