@@ -50,7 +50,7 @@ MODULES = \
 SOURCES = \
   $(RIEMANN)/rpn2_geoclaw.f \
   $(RIEMANN)/rpt2_geoclaw.f \
-  $(RIEMANN)/geoclaw_riemann_utils.f \
+  $(RIEMANN)/geoclaw_riemann_utils.f \ 
 
 #-------------------------------------------------------------------
 # Include Makefile containing standard definitions and make options:
