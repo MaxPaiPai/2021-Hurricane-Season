@@ -29,16 +29,16 @@ This folder contains two python files (setrun.py, setplot.py) and one Makefile t
 Nicholas was a Category 1 hurricane. It made landfall on the eastern portion of the Matagorda Peninsula in Texas. The cyclone then moved slowly over eastern Texas and Louisiana while weakening, producing heavy rainfall and flooding across the southeastern United States.
 
 ### Storm surge
-Elsa produced storm surge inundation levels of 1 ft to 3 ft above normally dry ground (AGL) along portions of the west coast of Florida, with the highest water levels occurring along the coasts of Hernando, Citrus, Levy, Dixie, and Taylor Counties at around 2 ft to 3 ft. 
+The highest storm surge detected from hurricane Nicholas was 4.30 ft above normal tide levels at a NOS tide gauge at Morgans Point, Texas. A storm surge of 4.13 ft above normal tide levels was also measured by a gauge at Freeport Harbor, Texas. The highest inundation occurred in Brazoria, Galveston, and Harris Counties. In Mississippi, a maximum water level of 3.3 ft MHHW was recorded by the gauge at the Bay Waveland Yacht Club, about 12 hours after the storm had become a tropical depression. In Louisiana, peak water levels of 2.7 ft and 2.6 ft MHHW were measured by NOS gauges at Amerada Pass and Shell Beach.
 
 ### Rainfall & Flooding
-Elsa produced a series of heavy rainfalls along its path involing the eastern US. In west Florida, a large region encountered a 3–7 inches of rain fell. Several monitoring sites across southwest Florida recorded rainfall amount of 8–11 inches. Rainfall amounts of 3–7 inches were observed in the Lower Florida Keys, with the highest accumulation occurring in Key West. Significant flooding occurred in multiple areas of Key West as a heavy rainband set up over the island.
+The moisture associated with Nicholas spread across coastal sections of southeastern Texas by 12 September as the cyclone passed east of the area. The heaviest rainfall in Texas occurred after hurricane Nicholas's landfall on 14 September and its forward motion has slowed down. It spent much of that day crossing the Houston/Galveston metropolitan area. Across this region, a large region experienced 4 to 9 inches rainfall.
 
 *Reference: National Hurricane Center Tropical Cyclone Report*
 (https://www.nhc.noaa.gov/data/tcr/AL142021_Nicholas.pdf)
 
 ## General Code Execution Guide
-If running this example, download setrun.py, setplot.py, and Makefile to the appropriate directory. Execute `$ make all` or `$ make .plots` to compile the code, run the simulation, and plot the results. If problems will be encountered, please refer to <a href="http://www.clawpack.org/quick_surge.html?highlight=storm%20surge" target="_blank">Storm Surge Guide</a> for possible solutions. 
+If running this example, download setrun.py, setplot.py, and Makefile to the appropriate directory. Execute `$ make all` or `$ make .plots` to compile the code, run the simulation, and plot the results. If problems will be encountered, please refer to <a href="http://www.clawpack.org/quick_surge.html" target="_blank">Storm Surge Guide</a> for possible solutions. 
 
 ## Topography & Bathymetry Data
 Topography data was obtained from:
@@ -65,7 +65,7 @@ atcf_path = os.path.join(data_dir, “bal142021.dat”)
 
 ## GeoClaw Parameters
 ### Landfall & Time Range
-Time of landfall was set in the simulation to be 7 August, 1400 UTC. Time range of simulation was set to be 2 days (48 hours) before landfall and 1 day (24 hours) after landfall.
+Time of landfall was set in the simulation to be 14 September, 1730 UTC. Time range of simulation was set to be 1 days (24 hours) before landfall and 1 day (24 hours) after landfall.
 ### Guages
 Gauges were selected in the NOAA Inundations dashboard:
 https://tidesandcurrents.noaa.gov/map/index.html
@@ -75,34 +75,34 @@ AMRClaw is a very powerful algorithm to refine areas for analysis. After merging
 from clawpack.clawutil import clawdata
 rundata = clawdata.ClawRunData(claw_pkg, num_dim)
 ```
-One may also want to modify AMR parameters like `amr_levels_max` and `refinement_ratios` in a more customized way. In this example, `amr_levels_max` was set to be `7` and `refinement_ratios` was set to be `[2, 2, 2, 3, 4, 4, 4]`. More information regarding parameter can be found in the documentation here: <a href="https://www.clawpack.org/setrun_amrclaw.html#setrun-amrclaw" target="_blank">AMRClaw Information</a>.
+One may also want to modify AMR parameters like `amr_levels_max` and `refinement_ratios` in a more customized way. In this example, `amr_levels_max` was set to be `6` and `refinement_ratios` was set to be `[2, 2, 2, 3, 3, 4]`. Since all six guages selected for this example are close to each other, instead of using six regions of refinement around each guage, one big region of refinement at north west gulf of Mexico was added. More information regarding parameter can be found in the documentation here: <a href="https://www.clawpack.org/setrun_amrclaw.html#setrun-amrclaw" target="_blank">AMRClaw Information</a>.
 
 ## Observed Surge Data
 To compare simulation surge data by GeoClaw, we introduced the observed surge data using `clawpack.geoclaw.util.fetch_noaa_tide_data` along with each guage's station ID. When plotting the observed surge data, we explicitly deduct the tide amount from sea level at each location to make the data solely representing storm surge.
 
 ## Validation Result
 ### Station 1-Matagorda Bay Entrance Channel, TX
-Cedar Key, FL `ID: 8727520` experienced a storm surge of approximately 0.75 meter. GeoClaw predicted approximately 0.80 meters. 
+Matagorda Bay Entrance Channel, TX `ID: 8773767` experienced a storm surge of approximately 0.75 meter. GeoClaw predicted approximately 0.80 meters. 
 
 ![Station1_Cedar Key](./images/station1_cedarkey.png)
 ### Station 2-Freeport Harbor, TX
-Clearwater Beach, FL `ID: 8726724` experienced a storm surge of approximately 0.50 meter. GeoClaw predicted approximately 0.25 meters. 
+Freeport Harbor, TX `ID: 8772471` experienced a storm surge of approximately 0.50 meter. GeoClaw predicted approximately 0.25 meters. 
 
 ![Station2_Clear Water Beach](./images/station2_clearwaterbeach.png)
 ### Station 3-Old Port Aransas Pass, TX
-Old Port Tampa, FL `ID: 8726607` experienced a storm surge of approximately 0.65 meter. GeoClaw predicted approximately 0.55 meters. 
+Old Port Aransas Pass, TX `ID: 8775241` experienced a storm surge of approximately 0.65 meter. GeoClaw predicted approximately 0.55 meters. 
 
 ![Station3_Old Port Tampa](./images/station3_oldporttampa.png)
 ### Station 4-Port Galveston Bay Entrance, TX
-Port Manatee, FL `ID: 8726384` experienced a storm surge of approximately 0.50 meter. GeoClaw predicted approximately 0.40 meters. 
+Port Galveston Bay Entrance, TX `ID: 8771341` experienced a storm surge of approximately 0.50 meter. GeoClaw predicted approximately 0.40 meters. 
 
 ![Station4_Port Manatee](./images/station4_portmanatee.png)
 ### Station 5-SPI Brazos Santiago, TX
-Naples, FL `ID: 8725110` experienced a storm surge of approximately 0.60 meter. GeoClaw predicted approximately 0.20 meters. 
+SPI Brazos Santiago, TX `ID: 8779749` experienced a storm surge of approximately 0.60 meter. GeoClaw predicted approximately 0.20 meters. 
 
 ![Station5_Naples](./images/station5_naples.png)
 ### Station 6-Texas Point, TX
-Key West, FL `ID: 8724580` experienced a storm surge of approximately 0.30 meter. GeoClaw predicted approximately 0.08 meters. 
+Texas Point, TX `ID: 8770822` experienced a storm surge of approximately 0.30 meter. GeoClaw predicted approximately 0.08 meters. 
 
 ![Station6_Key West](./images/station6_keywest.png)
 
