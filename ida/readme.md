@@ -26,24 +26,26 @@ This folder contains two python files (setrun.py, setplot.py) and one Makefile t
 ## Hurricane Ida Information
 
 ### Path & Landfall
-Elsa was a category 1 hurricane formed over the central tropical Atlantic. Elsa affected many countries including Barbados, St. Lucia, St. Vincent and the Grenadines, Martinique, the Dominican Republic, Haiti, Cuba, and the United States. It caused around $1 billion in total damage and was responsible for 13 direct fatalities. Elsa affected the Florida Keys and the west coast of Florida along its path before making landfall in the Big Bend region on 6th and 7th July. After the Florida landfall, Elsa turned toward the northeast and accelerated towards the U.S. eastern seaboard. 
+Ida was a category 4 hurricane. It caused severe damage when it made landfall in southeastern Louisiana before its landfall in western Cuba as a category 1 hurricane. Ida later became an extratropical low that caused heavy rain and deadly flooding in the northeastern United States.
 
 ### Storm surge
-Elsa produced storm surge inundation levels of 1 ft to 3 ft above normally dry ground (AGL) along portions of the west coast of Florida, with the highest water levels occurring along the coasts of Hernando, Citrus, Levy, Dixie, and Taylor Counties at around 2 ft to 3 ft. 
+Ida produced a devastating storm surge that penetrated well inland from the immediate coastline across portions of southeastern Louisiana, including on both the east and west banks of the Mississippi River and bordering portions of Lake Pontchartrain. Storm surge levels were high enough in some locations to overtop local levee systems. The analysis of peak inundation levels indicated below are based on tide and stream gauges, high water mark surveys, and storm surge hindcasts produced by the NHC Storm Surge Unit. Table 3 and Figs. 6a and 6b (zoomed into the highest-impacted area) provide observations from various tide stations, water level sensors, and surveyed high water marks along much of the U.S. northern Gulf coast.
 
 ### Rainfall & Flooding
-Elsa produced a series of heavy rainfalls along its path involing the eastern US. In west Florida, a large region encountered a 3–7 inches of rain fell. Several monitoring sites across southwest Florida recorded rainfall amount of 8–11 inches. Rainfall amounts of 3–7 inches were observed in the Lower Florida Keys, with the highest accumulation occurring in Key West. Significant flooding occurred in multiple areas of Key West as a heavy rainband set up over the island.
+Ida produced widespread rainfall along its track, with four areas of significant totals: 1) the US. Gulf coast states, 2) the US. Mid-Atlantic and New England states, 3) western Cuba, and 4) the Canadian Maritimes provinces (Tables 3 and 4, as well as Fig. 8).
+As a tropical cyclone, Ida produced widespread heavy rains along portions of the northern Gulf coast states northward and eastward into the Tennessee Valley. Rainfall totals of more than 10 inches occurred over portions of southeastern Louisiana, southeastern Mississippi, and southwestern Alabama, with a maximum storm total of 15.04 inches at Ponchatoula, Louisiana, and a storm total of 13.65 inches near Kiln, Mississippi. Rainfall totals of 5–9 inches with locally higher amounts occurred over much of the remainder of eastern Mississippi, southwestern Alabama, and the western Florida Panhandle. Rainfall totals of 3–5 inches occurred over other portions of western and northern Alabama, northwestern Georgia, eastern Tennessee, and central and eastern Kentucky. These rains produced freshwater flooding, especially along the Tangipahoa, Tchefuncte, Tickfaw, and Bogue Falaya Rivers in southeastern Louisiana and the Tchoutacabouffa, Biloxi, Wolf, and Jourdan Rivers in southeastern Mississippi.
+
 
 *Reference: National Hurricane Center Tropical Cyclone Report*
 (https://www.nhc.noaa.gov/data/tcr/AL092021_Ida.pdf)
 
 ## General Code Execution Guide
-If running this example, download setrun.py, setplot.py, and Makefile to the appropriate directory. Execute `$ make all` or `$ make .plots` to compile the code, run the simulation, and plot the results. If problems will be encountered, please refer to <a href="http://www.clawpack.org/quick_surge.html?highlight=storm%20surge" target="_blank">Storm Surge Guide</a> for possible solutions. 
+If running this example, download setrun.py, setplot.py, and Makefile to the appropriate directory. Execute `$ make all` or `$ make .plots` to compile the code, run the simulation, and plot the results. If problems will be encountered, please refer to <a href="http://www.clawpack.org/quick_surge.html" target="_blank">Storm Surge Guide</a> for possible solutions. 
 
 ## Topography & Bathymetry Data
 Topography data was obtained from:
 https://www.gebco.net/data_and_products/gridded_bathymetry_data/
-Regions of topography data used was a rectangle region (West 90°, East 65°, North 45°, South 15°)
+Regions of topography data used was a rectangle region (West 99°, East 78°, North 32°, South 16°)
 
 Currently, topography data is stored in the author's google drive. It can be accessed with a columbia email and can be fetched in setrun.py by modifying codes in topography section similar to this:
 ```python
@@ -54,13 +56,13 @@ clawutil.data.get_remote_file(
 
 ## Storm Data
 Storm specific data for Hurricane Elsa was retrieved from NOAA’s storm data archive:
-http://ftp.nhc.noaa.gov/atcf/archive/2021/bal052021.dat.gz
+http://ftp.nhc.noaa.gov/atcf/archive/2021/bal092021.dat.gz
 
 In setrun.py, data can be directly fetched by modifying codes in storm data section similar to this:
 ```python
 # Convert ATCF data to GeoClaw format
-clawutil.data.get_remote_file(“http://ftp.nhc.noaa.gov/atcf/archive/2021/bal052021.dat.gz”)
-atcf_path = os.path.join(data_dir, “bal052021.dat”)
+clawutil.data.get_remote_file(“http://ftp.nhc.noaa.gov/atcf/archive/2021/bal092021.dat.gz”)
+atcf_path = os.path.join(data_dir, “bal092021.dat”)
 ```
 
 ## GeoClaw Parameters
