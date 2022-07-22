@@ -17,8 +17,8 @@ This folder contains two python files (setrun.py, setplot.py) and one Makefile t
 - [Validation Result](#validation-result)
   * [Station 1-Matagorda Bay Entrance Channel, TX](#station-1-matagorda-bay-entrance-channel-tx)
   * [Station 2-Freeport Harbor, TX](#station-2-freeport-harbor-tx)
-  * [Station 3-Old Port Aransas Pass, TX](#station-3-old-port-aransas-pass-tx)
-  * [Station 4-Port Galveston Bay Entrance, TX](#station-4-galveston-bay-entrance-tx)
+  * [Station 3-Aransas Pass, TX](#station-3-aransas-pass-tx)
+  * [Station 4-Galveston Bay Entrance, TX](#station-4-galveston-bay-entrance-tx)
   * [Station 5-SPI Brazos Santiago, TX](#station-5-brazos-santiago-tx)
   * [Station 6-Texas Point, TX](#station-6-texas-point-tx)
   * [Result Interpretation](#result-interpretation)
@@ -82,34 +82,34 @@ To compare simulation surge data by GeoClaw, we introduced the observed surge da
 
 ## Validation Result
 ### Station 1-Matagorda Bay Entrance Channel, TX
-Matagorda Bay Entrance Channel, TX `ID: 8773767` experienced a storm surge of approximately 0.75 meter. GeoClaw predicted approximately 0.80 meters. 
+Matagorda Bay Entrance Channel, TX `ID: 8773767` experienced a storm surge of approximately 1.15 meter. GeoClaw predicted approximately 0.40 meters. 
 ![Station1](./images/station1.png)
 
 ### Station 2-Freeport Harbor, TX
-Freeport Harbor, TX `ID: 8772471` experienced a storm surge of approximately 0.50 meter. GeoClaw predicted approximately 0.25 meters. 
+Freeport Harbor, TX `ID: 8772471` experienced a storm surge of approximately 1.25 meter. GeoClaw predicted approximately 0.50 meters. 
 ![Station2](./images/station2.png)
 
-### Station 3-Old Port Aransas Pass, TX
-Old Port Aransas Pass, TX `ID: 8775241` experienced a storm surge of approximately 0.65 meter. GeoClaw predicted approximately 0.55 meters. 
+### Station 3-Aransas Pass, TX
+Aransas Pass, TX `ID: 8775241` experienced a storm surge of approximately 0.60 meter. GeoClaw predicted approximately 0.20 meters. 
 ![Station3](./images/station3.png)
 
-### Station 4-Port Galveston Bay Entrance, TX
-Port Galveston Bay Entrance, TX `ID: 8771341` experienced a storm surge of approximately 0.50 meter. GeoClaw predicted approximately 0.40 meters. 
+### Station 4-Galveston Bay Entrance, TX
+Port Galveston Bay Entrance, TX `ID: 8771341` experienced a storm surge of approximately 0.90 meter. GeoClaw predicted approximately 0.40 meters. 
 ![Station4](./images/station4.png)
 
 ### Station 5-SPI Brazos Santiago, TX
-SPI Brazos Santiago, TX `ID: 8779749` experienced a storm surge of approximately 0.60 meter. GeoClaw predicted approximately 0.20 meters. 
+SPI Brazos Santiago, TX `ID: 8779749` experienced a storm surge of approximately 0.40 meter. GeoClaw predicted approximately 0.10 meters. 
 ![Station5](./images/station5.png)
 
 ### Station 6-Texas Point, TX
-Texas Point, TX `ID: 8770822` experienced a storm surge of approximately 0.30 meter. GeoClaw predicted approximately 0.08 meters. 
+Texas Point, TX `ID: 8770822` experienced a storm surge of approximately 0.75 meter. GeoClaw predicted approximately 0.40 meters. 
 ![Station6](./images/station6.png)
 
 ### Result Interpretation
-Differences in surface level are reasonable and acceptable with maximum error among all guages less than 0.5 meters. Individual difference are correlated to rainfall and flooding amount which was not included in the GeoClaw simulation due to their complexity and unpredictability. However, notice there's also a discrepancy of timing between major surge at Key West station. The reason is Key West experienced the most intense rainfall and flooding which explains the surge on observed data. Note that there's little or no precipitation at hurricane eye which explains the surface drop for observed data but a surge on simulation data.
+Differences in surface level are reasonable and acceptable at Matagorda Bay Entrance, Freeport Harbor, and Aransas Pass. Timing and pattern of storm surges obtained from GeoClaw were generally consistent with the observed data at these gauges. The reason for the differences may come from the rainfall by hurricane Nicholas. However at gauge Galveston Bay Entrance, SPI Brazos Santiago, and Texas Point, timing and pattern of storm surge from simulation does not match observed data as evidently as the first three stations. Other than rainfall and flooding, topography could be the main problem for the latter three gauges. To elaborate, gauge at Texas Point lies in the channel between Texas and Louisiana. Gauge at Galveston Bay Entrance is coverd by Galveston island. Gauge at SPI Brazos Santiago is also located on the south of the South Padre Island. It is very hard to simulate these 
 
 ## Conclusion
-Timing and pattern of storm surges obtained from GeoClaw were generally consistent with the observed data. In most cases, the observed storm surge slightly exceeded the amount of which from GeoClaw simulation. The reason may likely correspond to the rainfall and flooding caused by hurricane Elsa which was not taken into account by GeoClaw simulation. Future studies can investigate the relationship between timing of surges on real data and precipitation, so that a more detailed analysis can be conducted. 
+ In most cases, the observed storm surge slightly exceeded the amount of which from GeoClaw simulation. The reason may likely correspond to the rainfall and flooding caused by hurricane Elsa which was not taken into account by GeoClaw simulation. Future studies can investigate the relationship between timing of surges on real data and precipitation, so that a more detailed analysis can be conducted. 
 
 
 Author: Jinpai (Max) Zhao
