@@ -82,26 +82,32 @@ To compare simulation surge data by GeoClaw, we introduced the observed surge da
 ## Validation Result
 ### Station 1-Matagorda Bay Entrance Channel, TX
 Matagorda Bay Entrance Channel, TX `ID: 8773767` experienced a storm surge of approximately 1.15 meter. GeoClaw predicted approximately 0.40 meters. 
+
 ![Station1](./images/station1.png)
 
 ### Station 2-Freeport Harbor, TX
 Freeport Harbor, TX `ID: 8772471` experienced a storm surge of approximately 1.25 meter. GeoClaw predicted approximately 0.50 meters. 
+
 ![Station2](./images/station2.png)
 
 ### Station 3-Aransas Pass, TX
 Aransas Pass, TX `ID: 8775241` experienced a storm surge of approximately 0.60 meter. GeoClaw predicted approximately 0.20 meters. 
+
 ![Station3](./images/station3.png)
 
 ### Station 4-Galveston Bay Entrance, TX
 Port Galveston Bay Entrance, TX `ID: 8771341` experienced a storm surge of approximately 0.90 meter. GeoClaw predicted approximately 0.40 meters. 
+
 ![Station4](./images/station4.png)
 
 ### Station 5-SPI Brazos Santiago, TX
 SPI Brazos Santiago, TX `ID: 8779749` experienced a storm surge of approximately 0.40 meter. GeoClaw predicted approximately 0.10 meters. 
+
 ![Station5](./images/station5.png)
 
 ### Station 6-Texas Point, TX
 Texas Point, TX `ID: 8770822` experienced a storm surge of approximately 0.75 meter. GeoClaw predicted approximately 0.40 meters. 
+
 ![Station6](./images/station6.png)
 
 ### Result Interpretation
