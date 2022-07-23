@@ -45,13 +45,12 @@ If running this example, download setrun.py, setplot.py, and Makefile to the app
 ## Topography & Bathymetry Data
 Topography data was obtained from:
 https://www.gebco.net/data_and_products/gridded_bathymetry_data/
-Regions of topography data used was a rectangle region (West 99°, East 78°, North 32°, South 16°)
 
-Currently, topography data is stored in the author's google drive. It can be accessed with a columbia email and can be fetched in setrun.py by modifying codes in topography section similar to this:
+It can be fetched in setrun.py by modifying codes in topography section similar to this:
 ```python
 # Fetch topo data
 clawutil.data.get_remote_file(
-           "https://drive.google.com/uc?export=download&id=1e8M_4m_y6yFJk9nOhwkPv9IJj8FotmQK")
+           "http://www.columbia.edu/~ktm2132/bathy/gulf_caribbean.tt3.tar.bz2")
 ```
 
 ## Storm Data
