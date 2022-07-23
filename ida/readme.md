@@ -84,22 +84,27 @@ To compare simulation surge data by GeoClaw, we introduced the observed surge da
 ## Validation Result
 ### Station 1-Pilots Station East, LA
 Cedar Key, FL `ID: 8760922` experienced a storm surge of approximately 0.75 meter. GeoClaw predicted approximately 0.80 meters. 
+
 ![Station1](./images/station1.png)
 
 ### Station 2-Grand Isle, LA
 Clearwater Beach, FL `ID: 8761724` experienced a storm surge of approximately 0.50 meter. GeoClaw predicted approximately 0.25 meters. 
+
 ![Station2](./images/station2.png)
 
 ### Station 3-Eugene Island, LA
 Old Port Tampa, FL `ID: 8764314` experienced a storm surge of approximately 0.65 meter. GeoClaw predicted approximately 0.55 meters. 
+
 ![Station3](./images/station3.png)
 
 ### Station 4-Bay Waveland Yacht Club, LA
 Port Manatee, FL `ID: 8747437` experienced a storm surge of approximately 0.50 meter. GeoClaw predicted approximately 0.40 meters. 
+
 ![Station4](./images/station4.png)
 
 ### Station 5-Port Fourchon, LA
 Naples, FL `ID: 8762075` experienced a storm surge of approximately 0.60 meter. GeoClaw predicted approximately 0.20 meters. 
+
 ![Station5](./images/station5.png)
 
 ### Result Interpretation
