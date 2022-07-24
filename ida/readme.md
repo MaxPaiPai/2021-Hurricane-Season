@@ -107,7 +107,7 @@ Port Fourchon, LA `ID: 8762075` experienced a storm surge of approximately 1.45 
 ![Station5](./images/station5.png)
 
 ### Result Interpretation
- Among all gauge locations, station 1, 2, 4, and 5 are to the right of the hurricane eye which we expected and observed positive surges in water level. For station 3, since it's to the left of the hurricane eye, a negative surge was observed and expected. Timing and pattern of storm surges obtained from GeoClaw were generally consistent with the observed data. But since hurricane Ida was a category 4 hurricane which generated severe rainfall and freshwater flooding, differences between observed data and simulation data are reasonable and acceptable. Several things need to notice 
+Among all gauge locations, station 1, 2, 4, and 5 are to the right of the hurricane eye when Ida passed the Mississippi River Delta region, which we expected and observed positive surges in water level. For station 3, since it's to the left of the hurricane eye, a negative surge was observed and expected. Timing and pattern of storm surges obtained from GeoClaw were generally consistent with the observed data. But since hurricane Ida was a category 4 hurricane which generated severe rainfall and freshwater flooding, differences between observed data and simulation data are reasonable and acceptable. More elaboration is needed for station 2 because it's the only station that simulated surge is higher than observed ones. The reason for that is because the gauge location at Grand Isle is in a small pier surrounded by land. So it's nearly impossible to refine the region
 
 ## Conclusion
 
