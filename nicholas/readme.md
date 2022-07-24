@@ -64,7 +64,7 @@ atcf_path = os.path.join(data_dir, “bal142021.dat”)
 
 ## GeoClaw Parameters
 ### Landfall & Time Range
-Time of landfall was set in the simulation to be 14 September, 1730 UTC. Time range of simulation was set to be 1 days (24 hours) before landfall and 1 day (24 hours) after landfall.
+Time of landfall was set in the simulation to be 14 September, 0530 UTC. Time range of simulation was set to be 1 days (24 hours) before landfall and 1 day (24 hours) after landfall.
 ### Guages
 Gauges were selected in the NOAA Inundations dashboard:
 https://tidesandcurrents.noaa.gov/map/index.html
