@@ -320,7 +320,7 @@ def setrun(claw_pkg='geoclaw'):
     # to specify regions of refinement append lines of the form
     #  [minlevel,maxlevel,t1,t2,x1,x2,y1,y2]
     regions.append([1, 3, clawdata.t0, clawdata.tfinal, clawdata.lower[0], clawdata.upper[0], clawdata.lower[1], clawdata.upper[1]])
-    regions.append([4, 5, clawdata.t0, clawdata.tfinal, -99, -92, 25.5, 31.0]) 
+    regions.append([4, 5, clawdata.t0, clawdata.tfinal, -99, -92, 25.5, 31.0]) # North West of the Gulf of Mexico, gauge 1, 2, 3, 4, 5, 6
    
     
 
