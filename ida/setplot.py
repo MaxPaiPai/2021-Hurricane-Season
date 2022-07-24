@@ -169,7 +169,7 @@ def setplot(plotdata=None):
 
     import datetime
     my_dict = {1: '8760922', 2: '8761724', 3: '8764314', 4: '8747437', 5: '8760721'}
-    def gauge_afteraxes(cd): # TO DO: how to plot, what is cd, where is data being read in?
+    def gauge_afteraxes(cd): 
         t0 = datetime.datetime(2021, 8, 27, 17)
         t_offset = datetime.datetime(2021, 8, 29, 17)
         tf = datetime.datetime(2021, 8, 30, 17)
