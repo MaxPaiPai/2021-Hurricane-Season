@@ -96,7 +96,7 @@ Aransas Pass, TX `ID: 8775241` experienced a storm surge of approximately 0.60 m
 ![Station3](./images/station3.png)
 
 ### Station 4-Galveston Bay Entrance, TX
-Port Galveston Bay Entrance, TX `ID: 8771341` experienced a storm surge of approximately 0.90 meter. GeoClaw predicted approximately 0.40 meters. 
+Galveston Bay Entrance, TX `ID: 8771341` experienced a storm surge of approximately 0.90 meter. GeoClaw predicted approximately 0.40 meters. 
 
 ![Station4](./images/station4.png)
 
