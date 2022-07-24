@@ -320,10 +320,7 @@ def setrun(claw_pkg='geoclaw'):
     # to specify regions of refinement append lines of the form
     #  [minlevel,maxlevel,t1,t2,x1,x2,y1,y2]
     regions.append([1, 3, clawdata.t0, clawdata.tfinal, clawdata.lower[0], clawdata.upper[0], clawdata.lower[1], clawdata.upper[1]])
-    # regions.append([5, 6, clawdata.t0, clawdata.tfinal, -92.8, -88.3, 28.5, 30.7]) # Mississippi River Delta (Grand Isle; Gauge 1,2)
     regions.append([5, 6, clawdata.t0, clawdata.tfinal, -90.4, -89.0, 28.8, 29.5]) # Grand Isle; Gauge 1,2
-
-   
     regions.append([3, 4, clawdata.t0, clawdata.tfinal, -93, -90, 29.0, 31.0]) # Gauge 3
     regions.append([4, 5, clawdata.t0, clawdata.tfinal, -90, -89, 29.0, 31.0]) # Gauge 4, 5
     
@@ -373,10 +370,10 @@ def setrun(claw_pkg='geoclaw'):
 
     rundata.gaugedata.gauges.append([1, -89.42, 28.91,
                                      rundata.clawdata.t0,
-                                     rundata.clawdata.tfinal])   # Pilots Station East 8760922                         
+                                     rundata.clawdata.tfinal])   # Pilots Station East, 8760922                         
     rundata.gaugedata.gauges.append([2, -89.96, 29.22,
                                      rundata.clawdata.t0,
-                                     rundata.clawdata.tfinal])   # Grand Isle 8761724                     
+                                     rundata.clawdata.tfinal])   # Grand Isle, 8761724                     
     rundata.gaugedata.gauges.append([3, -91.46, 29.26,
                                      rundata.clawdata.t0,
                                      rundata.clawdata.tfinal])   # Eugene Island, 8764314                         
