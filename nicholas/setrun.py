@@ -75,7 +75,7 @@ def setrun(claw_pkg='geoclaw'):
     clawdata.upper[0] = -70.0      # east longitude 70
 
     clawdata.lower[1] = 8.0       # south latitude 8
-    clawdata.upper[1] = 32.0      # north latitude  32
+    clawdata.upper[1] = 32.0      # north latitude 32
 
 
     # Number of grid cells:
@@ -368,10 +368,10 @@ def setrun(claw_pkg='geoclaw'):
 
     rundata.gaugedata.gauges.append([1, -96.31, 28.40,
                                      rundata.clawdata.t0,
-                                     rundata.clawdata.tfinal])   # Matagorda Bay Entrance Channel 8773767                       
+                                     rundata.clawdata.tfinal])   # Matagorda Bay Entrance Channel, 8773767                       
     rundata.gaugedata.gauges.append([2, -95.29, 28.93,
                                      rundata.clawdata.t0,
-                                     rundata.clawdata.tfinal])   # Freeport Harbor 8772471                    
+                                     rundata.clawdata.tfinal])   # Freeport Harbor, 8772471                    
     rundata.gaugedata.gauges.append([3, -97.03, 27.83,
                                      rundata.clawdata.t0,
                                      rundata.clawdata.tfinal])   # Aransas Pass, 8775241 
