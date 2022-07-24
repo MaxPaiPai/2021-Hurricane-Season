@@ -65,7 +65,7 @@ atcf_path = os.path.join(data_dir, “bal092021.dat”)
 
 ## GeoClaw Parameters
 ### Landfall & Time Range
-Time of landfall was set in the simulation to be 7 August, 1400 UTC. Time range of simulation was set to be 2 days (48 hours) before landfall and 1 day (24 hours) after landfall.
+Time of landfall was set in the simulation to be 29 August, 1700 UTC. Time range of simulation was set to be 2 days (48 hours) before landfall and 1 day (24 hours) after landfall.
 ### Guages
 Gauges were selected in the NOAA Inundations dashboard:
 https://tidesandcurrents.noaa.gov/map/index.html
@@ -75,42 +75,42 @@ AMRClaw is a very powerful algorithm to refine areas for analysis. After merging
 from clawpack.clawutil import clawdata
 rundata = clawdata.ClawRunData(claw_pkg, num_dim)
 ```
-One may also want to modify AMR parameters like `amr_levels_max` and `refinement_ratios` in a more customized way. In this example, `amr_levels_max` was set to be `7` and `refinement_ratios` was set to be `[2, 2, 2, 3, 4, 4, 4]`. More information regarding parameter can be found in the documentation here: <a href="https://www.clawpack.org/setrun_amrclaw.html#setrun-amrclaw" target="_blank">AMRClaw Information</a>.
+One may also want to modify AMR parameters like `amr_levels_max` and `refinement_ratios` in a more customized way. In this example, `amr_levels_max` was set to be `6` and `refinement_ratios` was set to be `[2, 2, 2, 3, 4, 4]`. Note that for this specific example, Mississippi River Delta region was very hard to refine due to its extremely complicated and detailed topography. Therefore, high refinement levels are not recommended because run time may increase exponentially without making much progress. More information regarding refinement parameter can be found in the documentation here: <a href="https://www.clawpack.org/setrun_amrclaw.html#setrun-amrclaw" target="_blank">AMRClaw Information</a>.
 
 ## Observed Surge Data
 To compare simulation surge data by GeoClaw, we introduced the observed surge data using `clawpack.geoclaw.util.fetch_noaa_tide_data` along with each guage's station ID. When plotting the observed surge data, we explicitly deduct the tide amount from sea level at each location to make the data solely representing storm surge.
 
 ## Validation Result
 ### Station 1-Pilots Station East, LA
-Cedar Key, FL `ID: 8760922` experienced a storm surge of approximately 0.75 meter. GeoClaw predicted approximately 0.80 meters. 
+Pilots Station East, LA `ID: 8760922` experienced a storm surge of approximately 1.40 meter. GeoClaw predicted approximately 0.45 meters. 
 
 ![Station1](./images/station1.png)
 
 ### Station 2-Grand Isle, LA
-Clearwater Beach, FL `ID: 8761724` experienced a storm surge of approximately 0.50 meter. GeoClaw predicted approximately 0.25 meters. 
+Grand Isle, LA `ID: 8761724` experienced a storm surge of approximately 1.65 meter. GeoClaw predicted approximately 2.80 meters. 
 
 ![Station2](./images/station2.png)
 
 ### Station 3-Eugene Island, LA
-Old Port Tampa, FL `ID: 8764314` experienced a storm surge of approximately 0.65 meter. GeoClaw predicted approximately 0.55 meters. 
+Eugene Island, LA `ID: 8764314` experienced a storm surge of approximately -0.40 meter. GeoClaw predicted approximately -0.45 meters. 
 
 ![Station3](./images/station3.png)
 
 ### Station 4-Bay Waveland Yacht Club, LA
-Port Manatee, FL `ID: 8747437` experienced a storm surge of approximately 0.50 meter. GeoClaw predicted approximately 0.40 meters. 
+Bay Waveland Yacht Club, LA `ID: 8747437` experienced a storm surge of approximately 2.25 meter. GeoClaw predicted approximately 0.75 meters. 
 
 ![Station4](./images/station4.png)
 
 ### Station 5-Port Fourchon, LA
-Naples, FL `ID: 8762075` experienced a storm surge of approximately 0.60 meter. GeoClaw predicted approximately 0.20 meters. 
+Port Fourchon, LA `ID: 8762075` experienced a storm surge of approximately 1.45 meter. GeoClaw predicted approximately 1.10 meters. 
 
 ![Station5](./images/station5.png)
 
 ### Result Interpretation
-Differences in surface level are reasonable and acceptable with maximum error among all guages less than 0.5 meters. Individual difference are correlated to rainfall and flooding amount which was not included in the GeoClaw simulation due to their complexity and unpredictability. However, notice there's also a discrepancy of timing between major surge at Key West station. The reason is Key West experienced the most intense rainfall and flooding which explains the surge on observed data. Note that there's little or no precipitation at hurricane eye which explains the surface drop for observed data but a surge on simulation data.
+ Among all gauge locations, station 1, 2, 4, and 5 are to the right of the hurricane eye which we expected and observed positive surges in water level. For station 3, since it's to the left of the hurricane eye, a negative surge was observed and expected. Timing and pattern of storm surges obtained from GeoClaw were generally consistent with the observed data. But since hurricane Ida was a category 4 hurricane which generated severe rainfall and freshwater flooding, differences between observed data and simulation data are reasonable and acceptable. Several things need to notice 
 
 ## Conclusion
-Timing and pattern of storm surges obtained from GeoClaw were generally consistent with the observed data. In most cases, the observed storm surge slightly exceeded the amount of which from GeoClaw simulation. The reason may likely correspond to the rainfall and flooding caused by hurricane Elsa which was not taken into account by GeoClaw simulation. Future studies can investigate the relationship between timing of surges on real data and precipitation, so that a more detailed analysis can be conducted. 
+
 
 
 Author: Jinpai (Max) Zhao
