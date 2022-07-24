@@ -32,8 +32,7 @@ Ida was a category 4 hurricane. It caused severe damage when it made landfall in
 Ida produced a very severe storm surge that penetrated inland from the immediate coastline across portions of southeastern Louisiana, including on both the east and west banks of the Mississippi River and bordering portions of Lake Pontchartrain. Storm surge levels were enough high in some areas to overtop local levee systems. 
 
 ### Rainfall & Flooding
-Ida produced widespread rainfall along its track, with four areas of significant totals: 1) the US. Gulf coast states, 2) the US. Mid-Atlantic and New England states, 3) western Cuba, and 4) the Canadian Maritimes provinces (Tables 3 and 4, as well as Fig. 8).
-As a tropical cyclone, Ida produced widespread heavy rains along portions of the northern Gulf coast states northward and eastward into the Tennessee Valley. Rainfall totals of more than 10 inches occurred over portions of southeastern Louisiana, southeastern Mississippi, and southwestern Alabama, with a maximum storm total of 15.04 inches at Ponchatoula, Louisiana, and a storm total of 13.65 inches near Kiln, Mississippi. Rainfall totals of 5–9 inches with locally higher amounts occurred over much of the remainder of eastern Mississippi, southwestern Alabama, and the western Florida Panhandle. Rainfall totals of 3–5 inches occurred over other portions of western and northern Alabama, northwestern Georgia, eastern Tennessee, and central and eastern Kentucky. These rains produced freshwater flooding, especially along the Tangipahoa, Tchefuncte, Tickfaw, and Bogue Falaya Rivers in southeastern Louisiana and the Tchoutacabouffa, Biloxi, Wolf, and Jourdan Rivers in southeastern Mississippi.
+Generally speaking, Ida produced widespread rainfall along its path. Ida produced widespread heavy rains along portions of the northern Gulf coast states. Rainfall totals of more than 10 inches occurred over portions of southeastern Louisiana, southeastern Mississippi, and southwestern Alabama. Rainfall totals of 5 to 9 inches over eastern Mississippi, southwestern Alabama, and the western Florida Panhandle. The heavy rainfall produced freshwater flooding, especially in southeastern Louisiana and in southeastern Mississippi.
 
 
 *Reference: National Hurricane Center Tropical Cyclone Report*
@@ -43,10 +42,10 @@ As a tropical cyclone, Ida produced widespread heavy rains along portions of the
 If running this example, download setrun.py, setplot.py, and Makefile to the appropriate directory. Execute `$ make all` or `$ make .plots` to compile the code, run the simulation, and plot the results. If problems will be encountered, please refer to <a href="http://www.clawpack.org/quick_surge.html" target="_blank">Storm Surge Guide</a> for possible solutions. 
 
 ## Topography & Bathymetry Data
-Topography data was obtained from:
+Topography data can be obtained from:
 https://www.gebco.net/data_and_products/gridded_bathymetry_data/
 
-It can be fetched in setrun.py by modifying codes in topography section similar to this:
+Topography file used for this example is stored in professor Kyle Mandli's website and can be fetched in setrun.py by modifying codes in topography section similar to this:
 ```python
 # Fetch topo data
 clawutil.data.get_remote_file(
