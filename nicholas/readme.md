@@ -41,10 +41,10 @@ The moisture associated with Nicholas spread across coastal sections of southeas
 If running this example, download setrun.py, setplot.py, and Makefile to the appropriate directory. Execute `$ make all` or `$ make .plots` to compile the code, run the simulation, and plot the results. If problems will be encountered, please refer to <a href="http://www.clawpack.org/quick_surge.html" target="_blank">Storm Surge Guide</a> for possible solutions. (Approximate runtime for this example on Monterey quad-Core intel core: 40 min)
 
 ## Topography & Bathymetry Data
-Topography data was obtained from:
+Topography data can be obtained from:
 https://www.gebco.net/data_and_products/gridded_bathymetry_data/
 
-It can be fetched in setrun.py by modifying codes in topography section similar to this:
+Topography file used for this example is stored in professor Kyle Mandli's website and can be fetched in setrun.py by modifying codes in topography section similar to this:
 ```python
 # Fetch topo data
 clawutil.data.get_remote_file(
