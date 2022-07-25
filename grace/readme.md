@@ -1,8 +1,8 @@
-# Storm Report: Hurricane Nicholas `AL142021`
-This folder contains two python files (setrun.py, setplot.py) and one Makefile to simulate storm bevavior of hurricane Nicholas in September 2021.
+# Storm Report: Hurricane Grace `AL072021`
+This folder contains two python files (setrun.py, setplot.py) and one Makefile to simulate storm bevavior of hurricane Grace in August 2021.
 
 ## Table of contents
-- [Hurricane Nicholas Information](#hurricane-nicholas-information)
+- [Hurricane Grace Information](#hurricane-grace-information)
   * [Path & Landfall](#path--landfall)
   * [Storm surge](#storm-surge)
   * [Rainfall & Flooding](#rainfall--flooding)
@@ -15,16 +15,13 @@ This folder contains two python files (setrun.py, setplot.py) and one Makefile t
   * [AMRClaw](#amrclaw)
 - [Observed Surge Data](#observed-surge-data)
 - [Validation Result](#validation-result)
-  * [Station 1-Matagorda Bay Entrance Channel, TX](#station-1-matagorda-bay-entrance-channel-tx)
-  * [Station 2-Freeport Harbor, TX](#station-2-freeport-harbor-tx)
-  * [Station 3-Old Port Aransas Pass, TX](#station-3-old-port-aransas-pass-tx)
-  * [Station 4-Port Galveston Bay Entrance, TX](#station-4-galveston-bay-entrance-tx)
-  * [Station 5-SPI Brazos Santiago, TX](#station-5-brazos-santiago-tx)
-  * [Station 6-Texas Point, TX](#station-6-texas-point-tx)
+  * [Station 1-Aransas Pass, TX](#station-1-aransas-pass-tx)
+  * [Station 2-SPI Brazos Santiago, TX](#station-2-brazos-santiago-tx)
+  * [Station 3-South Padre Island CG Station, TX](#station-3-south-padre-island-cg-station-tx)
   * [Result Interpretation](#result-interpretation)
 - [Conclusion](#conclusion)
 
-## Hurricane Nicholas Information
+## Hurricane Grace Information
 ### Path & Landfall
 Elsa was a category 1 hurricane formed over the central tropical Atlantic. Elsa affected many countries including Barbados, St. Lucia, St. Vincent and the Grenadines, Martinique, the Dominican Republic, Haiti, Cuba, and the United States. It caused around $1 billion in total damage and was responsible for 13 direct fatalities. Elsa affected the Florida Keys and the west coast of Florida along its path before making landfall in the Big Bend region on 6th and 7th July. After the Florida landfall, Elsa turned toward the northeast and accelerated towards the U.S. eastern seaboard. 
 ### Storm surge
@@ -51,19 +48,19 @@ clawutil.data.get_remote_file(
 ```
 
 ## Storm Data
-Storm specific data for Hurricane Elsa was retrieved from NOAA’s storm data archive:
-http://ftp.nhc.noaa.gov/atcf/archive/2021/bal142021.dat.gz
+Storm specific data for Hurricane Grace was retrieved from NOAA’s storm data archive:
+http://ftp.nhc.noaa.gov/atcf/archive/2021/bal072021.dat.gz
 
 In setrun.py, data can be directly fetched by modifying codes in storm data section similar to this:
 ```python
 # Convert ATCF data to GeoClaw format
-clawutil.data.get_remote_file(“http://ftp.nhc.noaa.gov/atcf/archive/2021/bal142021.dat.gz”)
-atcf_path = os.path.join(data_dir, “bal142021.dat”)
+clawutil.data.get_remote_file(“http://ftp.nhc.noaa.gov/atcf/archive/2021/bal072021.dat.gz”)
+atcf_path = os.path.join(data_dir, “bal072021.dat”)
 ```
 
 ## GeoClaw Parameters
 ### Landfall & Time Range
-Time of landfall was set in the simulation to be 7 August, 1400 UTC. Time range of simulation was set to be 2 days (48 hours) before landfall and 1 day (24 hours) after landfall.
+Time of landfall was set in the simulation to be 20 August, 1000 UTC. Time range of simulation was set to be 1 days (24 hours) before landfall and 1 day (24 hours) after landfall.
 ### Guages
 Gauges were selected in the NOAA Inundations dashboard:
 https://tidesandcurrents.noaa.gov/map/index.html
@@ -79,30 +76,18 @@ One may also want to modify AMR parameters like `amr_levels_max` and `refinement
 To compare simulation surge data by GeoClaw, we introduced the observed surge data using `clawpack.geoclaw.util.fetch_noaa_tide_data` along with each guage's station ID. When plotting the observed surge data, we explicitly deduct the tide amount from sea level at each location to make the data solely representing storm surge.
 
 ## Validation Result
-### Station 1-Matagorda Bay Entrance Channel, TX
-Cedar Key, FL `ID: 8727520` experienced a storm surge of approximately 0.75 meter. GeoClaw predicted approximately 0.80 meters. 
+### Station 1-Aransas Pass, TX
+Aransas Pass, TX `ID: 8775241` experienced a storm surge of approximately 0.75 meter. GeoClaw predicted approximately 0.80 meters. 
 
-![Station1_Cedar Key](./images/station1_cedarkey.png)
-### Station 2-Freeport Harbor, TX
-Clearwater Beach, FL `ID: 8726724` experienced a storm surge of approximately 0.50 meter. GeoClaw predicted approximately 0.25 meters. 
+![Station1](./images/station1.png)
+### Station 2-SPI Brazos Santiago, TX
+SPI Brazos Santiago, TX `ID: 8779749` experienced a storm surge of approximately 0.50 meter. GeoClaw predicted approximately 0.25 meters. 
 
-![Station2_Clear Water Beach](./images/station2_clearwaterbeach.png)
-### Station 3-Old Port Aransas Pass, TX
-Old Port Tampa, FL `ID: 8726607` experienced a storm surge of approximately 0.65 meter. GeoClaw predicted approximately 0.55 meters. 
+![Station2](./images/station2.png)
+### Station 3-South Padre Island CG Station, TX
+South Padre Island CG Station, TX `ID: 8779748` experienced a storm surge of approximately 0.65 meter. GeoClaw predicted approximately 0.55 meters. 
 
-![Station3_Old Port Tampa](./images/station3_oldporttampa.png)
-### Station 4-Port Galveston Bay Entrance, TX
-Port Manatee, FL `ID: 8726384` experienced a storm surge of approximately 0.50 meter. GeoClaw predicted approximately 0.40 meters. 
-
-![Station4_Port Manatee](./images/station4_portmanatee.png)
-### Station 5-SPI Brazos Santiago, TX
-Naples, FL `ID: 8725110` experienced a storm surge of approximately 0.60 meter. GeoClaw predicted approximately 0.20 meters. 
-
-![Station5_Naples](./images/station5_naples.png)
-### Station 6-Texas Point, TX
-Key West, FL `ID: 8724580` experienced a storm surge of approximately 0.30 meter. GeoClaw predicted approximately 0.08 meters. 
-
-![Station6_Key West](./images/station6_keywest.png)
+![Station3](./images/station3.png)
 
 ### Result Interpretation
 Differences in surface level are reasonable and acceptable with maximum error among all guages less than 0.5 meters. Individual difference are correlated to rainfall and flooding amount which was not included in the GeoClaw simulation due to their complexity and unpredictability. However, notice there's also a discrepancy of timing between major surge at Key West station. The reason is Key West experienced the most intense rainfall and flooding which explains the surge on observed data. Note that there's little or no precipitation at hurricane eye which explains the surface drop for observed data but a surge on simulation data.
