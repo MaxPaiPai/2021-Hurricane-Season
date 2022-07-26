@@ -77,15 +77,15 @@ To compare simulation surge data by GeoClaw, we introduced the observed surge da
 
 ## Validation Result
 ### Station 1-Aransas Pass, TX
-Aransas Pass, TX `ID: 8775241` experienced a storm surge of approximately 0.75 meter. GeoClaw predicted approximately 0.80 meters. 
+Aransas Pass, TX `ID: 8775241` maintained the water level of approximately 0.25 meter. GeoClaw predicted approximately 0.00 meters. 
 
 ![Station1](./images/station1.png)
 ### Station 2-SPI Brazos Santiago, TX
-SPI Brazos Santiago, TX `ID: 8779749` experienced a storm surge of approximately 0.50 meter. GeoClaw predicted approximately 0.25 meters. 
+SPI Brazos Santiago, TX `ID: 8779749` maintained the water level of approximately 0.20 meter. GeoClaw predicted approximately 0.00 meters.
 
 ![Station2](./images/station2.png)
 ### Station 3-South Padre Island CG Station, TX
-South Padre Island CG Station, TX `ID: 8779748` experienced a storm surge of approximately 0.65 meter. GeoClaw predicted approximately 0.55 meters. 
+South Padre Island CG Station, TX `ID: 8779748` maintained the water level of approximately 0.20 meter. GeoClaw predicted approximately 0.00 meters.
 
 ![Station3](./images/station3.png)
 
