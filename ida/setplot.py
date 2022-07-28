@@ -252,7 +252,7 @@ def setplot(plotdata=None):
     plotdata.latex_makepdf = False           # also run pdflatex?
     plotdata.parallel = True                 # parallel plotting
 
-    return plotdata
+    return plotdata 
 
 
 
