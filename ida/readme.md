@@ -113,7 +113,7 @@ Among all gauge locations, station 1, 2, 4, and 5 are to the right of the hurric
 Generally speaking, observed data and simulation data share large amount of similarty in timing and pattern of surges. Two major reasons for the differences between the two data or abnormality are highly likely rainfall & freshwater flooding caused by the hurricane which was not taken into account by GeoClaw, and low/bad refinement of topography. Note that for this specific example, Mississippi River Delta region has lots of tiny islands and narrow waterways, making it very hard to refine. For future executions of this example, user may need to fully consider the pros (possibility of better refined regions) and cons (low efficiency in terms of run time) when adding more refinement levels.
 
 
-Author: Jinpai (Max) Zhao
+Author: Jinpai (Max) Zhao 
 ```
 jz3445@columbia.edu
 ```
