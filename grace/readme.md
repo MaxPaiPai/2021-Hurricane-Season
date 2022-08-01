@@ -97,10 +97,10 @@ South Padre Island CG Station, TX `ID: 8779748` experienced a storm surge of app
 
 
 ### Result Interpretation
-
+All gauges added observed zero surge and simulated zero surge. 
 
 ## Conclusion
-This is a special example because all 
+This is a special example because all guages reported nothing really significant. But 
 
 
 Author: Jinpai (Max) Zhao
