@@ -24,13 +24,14 @@ This folder contains two python files (setrun.py, setplot.py) and one Makefile t
 ## Hurricane Grace Information
 
 ### Path & Landfall
-
+Grace hit the mainland coast of Mexico as a category 3 hurricane. It was the strongest hurricane on record to make landfall in the state of Veracruz. Grace also hit the Yucatan Peninsula of Mexico as a category 1 hurricane and made landfall as a tropical storm in the Dominican Republic and Jamaica. The center of Grace passed just offshore of Tiburon Peninsula on 17 August and moved westward toward Jamaica. Grace made landfall as a category 1 hurricane along the east coast of the Yucatan Peninsula just south of Tulum, Mexico around 0945 UTC 19 August.
 
 ### Storm surge
- 
+Grace is estimated to raise water levels along the coast of the Yucatan Peninsula of Mexico by as much as 3 to 5 ft above normal tide levels near Tulum. Grace produced negligible water level rises in Puerto Rico and the U.S. Virgin Islands when it passed to the south as a tropical depression. The highest storm surge measured by a National Ocean Service (NOS) tide gauge was 0.64 ft above normal tide levels at Mayaguez, Puerto Rico.
+
 
 ### Rainfall & Flooding
-
+Grace produced 1–3 inches of rainfall across portions of Puerto Rico and the U.S. Virgin Islands, but no significant flooding impacts were reported. Southwestern portions of the Dominican Republic (Fig. 9) received 5–9 inches (127–229 mm) of rainfall, which triggered flash flooding and landslides. In Haiti, 12.95 inches (329 mm) of rain was measured in Savane Zombie and 7.26 inches (184.4 mm) was reported in Fonds-des-Negres. The heavy rainfall and resulting flooding compounded the suffering of tens of thousands of residents who were left homeless following a devastating 7.2-magnitude earthquake that struck southern Haiti on 14 August. Flash flooding in Les Cayes necessitated over a dozen water rescues, and significant flooding was also reported in coastal towns including Cayes-Jacmel and Bainet. In Jamaica, Grace produced 5–10 inches (127–254 mm) of rainfall over portions of the island, with a maximum of 14.07 inches (357.5 mm) measured in Bois Content. This excessive rainfall resulted in flash flooding, river flooding, and landslides, particularly across the eastern parishes of Jamaica (Fig. 10). Water rescues were conducted at the Bog Walk Gorge after some motorists became stranded by Rio Cobre flooding near the Flat Bridge. On Grand Cayman, 7.60 inches (193.0 mm) of rain fell at the Owen Roberts International Airport in Georgetown, and some localized flooding was reported on the island. No significant flooding impacts were reported in Cuba.
 
 
 *Reference: National Hurricane Center Tropical Cyclone Report*
@@ -99,7 +100,7 @@ South Padre Island CG Station, TX `ID: 8779748` experienced a storm surge of app
 
 
 ## Conclusion
-
+This is a special example because all 
 
 
 Author: Jinpai (Max) Zhao
