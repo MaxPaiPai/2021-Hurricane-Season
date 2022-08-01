@@ -1,8 +1,8 @@
-# Storm Report: Hurricane Ida `AL092021`
-This folder contains two python files (setrun.py, setplot.py) and one Makefile to simulate storm bevavior of hurricane Ida in August 2021.
+# Storm Report: Hurricane Grace `AL072021`
+This folder contains two python files (setrun.py, setplot.py) and one Makefile to simulate storm bevavior of hurricane Grace in August 2021.
 
 ## Table of contents
-- [Hurricane Ida Information](#hurricane-ida-information)
+- [Hurricane Grace Information](#hurricane-grace-information)
   * [Path & Landfall](#path--landfall)
   * [Storm surge](#storm-surge)
   * [Rainfall & Flooding](#rainfall--flooding)
@@ -15,15 +15,13 @@ This folder contains two python files (setrun.py, setplot.py) and one Makefile t
   * [AMRClaw](#amrclaw)
 - [Observed Surge Data](#observed-surge-data)
 - [Validation Result](#validation-result)
-  * [Station 1-Pilots Station East, LA](#station-1-pilots-station-east-la)
-  * [Station 2-Grand Isle, LA](#station-2-grand-isle-la)
-  * [Station 3-Eugene Island, LA](#station-3-eugene-island-la)
-  * [Station 4-Bay Waveland Yacht Club, LA](#station-4-bay-waveland-yacht-club-la)
-  * [Station 5-Port Fourchon, LA](#station-5-port-fourchon-la)
+  * [Station 1-Aransas Pass, TX](#station-1-aransas-pass-tx)
+  * [Station 2-SPI Brazos Santiago, TX](#station-2-spi-brazos-santiago-tx)
+  * [Station 3-South Padre Island CG Station, TX](#station-3-south-padre-island-cg-station-tx)
   * [Result Interpretation](#result-interpretation)
 - [Conclusion](#conclusion)
 
-## Hurricane Ida Information
+## Hurricane Grace Information
 
 ### Path & Landfall
 Ida was a category 4 hurricane. It caused severe damage when it made landfall in southeastern Louisiana before its landfall in western Cuba as a category 1 hurricane. Ida later became an extratropical low that caused heavy rain and deadly flooding in the northeastern United States.
@@ -81,30 +79,21 @@ One may also want to modify AMR parameters like `amr_levels_max` and `refinement
 To compare simulation surge data by GeoClaw, we introduced the observed surge data using `clawpack.geoclaw.util.fetch_noaa_tide_data` along with each guage's station ID. When plotting the observed surge data, we explicitly deduct the tide amount from sea level at each location to make the data solely representing storm surge. Also, given the significant initial differences between observed data and simulation data at all gauges, the mean of water level at each gauges was subtracted from the observed data.
 
 ## Validation Result
-### Station 1-Pilots Station East, LA
-Pilots Station East, LA `ID: 8760922` experienced a storm surge of approximately 0.90 meter. GeoClaw predicted approximately 0.45 meters. 
+### Station 1-Aransas Pass, TX
+Aransas Pass, TX `ID: 8775241` experienced a storm surge of approximately 0.90 meter. GeoClaw predicted approximately 0.45 meters. 
 
 ![Station1](./images/station1.png)
 
-### Station 2-Grand Isle, LA
-Grand Isle, LA `ID: 8761724` experienced a storm surge of approximately 1.50 meter. GeoClaw predicted approximately 2.80 meters. 
+### Station 2-SPI Brazos Santiago, TX
+SPI Brazos Santiago, TX `ID: 8779749` experienced a storm surge of approximately 1.50 meter. GeoClaw predicted approximately 2.80 meters. 
 
 ![Station2](./images/station2.png)
 
-### Station 3-Eugene Island, LA
-Eugene Island, LA `ID: 8764314` experienced a storm surge of approximately -0.75 meter. GeoClaw predicted approximately -0.45 meters. 
+### Station 3-South Padre Island CG Station, TX
+South Padre Island CG Station, TX `ID: 8779748` experienced a storm surge of approximately -0.75 meter. GeoClaw predicted approximately -0.45 meters. 
 
 ![Station3](./images/station3.png)
 
-### Station 4-Bay Waveland Yacht Club, LA
-Bay Waveland Yacht Club, LA `ID: 8747437` experienced a storm surge of approximately 1.80 meter. GeoClaw predicted approximately 0.75 meters. 
-
-![Station4](./images/station4.png)
-
-### Station 5-Port Fourchon, LA
-Port Fourchon, LA `ID: 8762075` experienced a storm surge of approximately 1.25 meter. GeoClaw predicted approximately 1.10 meters. 
-
-![Station5](./images/station5.png)
 
 ### Result Interpretation
 Among all gauge locations, station 1, 2, 4, and 5 are to the right of the hurricane eye when Ida passed the Mississippi River Delta region, and we expected and observed positive surges in water level. For station 3, since it's to the left of the hurricane eye, a negative surge was observed and expected. Timing and pattern of storm surges obtained from GeoClaw were generally consistent with the observed data. Since hurricane Ida was a category 4 hurricane which generated severe rainfall and freshwater flooding, differences between observed data and simulation data are reasonable and acceptable. More elaboration is needed for station 2 because it's the only station that surge from simulation is significantly higher than observed ones. The reason for that is the gauge location at Grand Isle is in a small pier surrounded by land. So it's nearly impossible to refine the region as specific as we need. Consequently, the location of station 2 for simulation was set in the nearest open water, and the abnormality can be explained because the land prevented the water from getting inside. Also, surge pattern of station 4 is not as good as other gauges because station 4 is located at a narrow pass of the mississippi river which cannot be refined in a reasonable time given author's current hardware setup.
