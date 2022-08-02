@@ -519,6 +519,6 @@ if __name__ == '__main__':
     if len(sys.argv) == 2:
         rundata = setrun(sys.argv[1])
     else:
-        rundata = setrun()
+        rundata = setrun() 
 
     rundata.write()
