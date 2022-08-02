@@ -166,7 +166,7 @@ def setplot(plotdata=None):
 
     import datetime
     my_dict = {1: '8775241', 2: '8779749', 3: '8779748',}
-    def gauge_afteraxes(cd): # TO DO: how to plot, what is cd, where is data being read in?
+    def gauge_afteraxes(cd): 
         t0 = datetime.datetime(2021, 8, 19, 10)
         t_offset = datetime.datetime(2021, 8, 20, 10)
         tf = datetime.datetime(2021, 8, 21, 10)
@@ -179,7 +179,7 @@ def setplot(plotdata=None):
         for j, dt in enumerate(date_time):
             t[j] = (dt - t_offset).total_seconds() / 86400
         
-        
+        # subtract mean
         raw = water_level - prediction
         mean = numpy.mean(raw)
         axes.plot(t, water_level - prediction - mean)
