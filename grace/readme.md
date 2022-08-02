@@ -26,6 +26,8 @@ This folder contains two python files (setrun.py, setplot.py) and one Makefile t
 ### Path & Landfall
 Grace hit the mainland coast of Mexico as a category 3 hurricane. It was the strongest hurricane on record to make landfall in the state of Veracruz. Grace also hit the Yucatan Peninsula of Mexico as a category 1 hurricane and made landfall as a tropical storm in the Dominican Republic and Jamaica. The center of Grace passed just offshore of Tiburon Peninsula on 17 August and moved westward toward Jamaica. Grace made landfall as a category 1 hurricane along the east coast of the Yucatan Peninsula just south of Tulum, Mexico around 0945 UTC 19 August.
 
+![path](./images/pic1.png)
+
 ### Storm surge
 Grace is estimated to raise water levels along the coast of the Yucatan Peninsula of Mexico by as much as 3 to 5 ft above normal tide levels near Tulum. Grace produced negligible water level rises in Puerto Rico and the U.S. Virgin Islands when it passed to the south as a tropical depression. The highest storm surge measured by a National Ocean Service (NOS) tide gauge was 0.64 ft above normal tide levels at Mayaguez, Puerto Rico.
 
