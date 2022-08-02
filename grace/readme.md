@@ -65,7 +65,7 @@ atcf_path = os.path.join(data_dir, “bal072021.dat”)
 ## GeoClaw Parameters
 ### Landfall & Time Range
 Due to limited range of storm specification data, time of ''landfall'' was set in the simulation to be 20 August, 1000 UTC, so that the storm will be simulated when it passes the Gulf of Mexico region. Time range of simulation was set to be 1 days (24 hours) before landfall and 1 day (24 hours) after landfall.
-### Guages
+### Gauges
 Gauges were selected in the NOAA Inundations dashboard:
 https://tidesandcurrents.noaa.gov/map/index.html
 ### AMRClaw
@@ -77,7 +77,7 @@ rundata = clawdata.ClawRunData(claw_pkg, num_dim)
 One may also want to modify AMR parameters like `amr_levels_max` and `refinement_ratios` in a more customized way. In this example, `amr_levels_max` was set to be `4` and `refinement_ratios` was set to be `[2, 2, 3, 4]`. More information regarding refinement parameter can be found in the documentation here: <a href="https://www.clawpack.org/setrun_amrclaw.html#setrun-amrclaw" target="_blank">AMRClaw Information</a>.
 
 ## Observed Surge Data
-To compare simulation surge data by GeoClaw, we introduced the observed surge data using `clawpack.geoclaw.util.fetch_noaa_tide_data` along with each guage's station ID. When plotting the observed surge data, we explicitly deduct the tide amount from sea level at each location to make the data solely representing storm surge. Also, given the significant initial differences between observed data and simulation data at all gauges, the mean of water level at each gauges was subtracted from the observed data.
+To compare simulation surge data by GeoClaw, we introduced the observed surge data using `clawpack.geoclaw.util.fetch_noaa_tide_data` along with each gauge's station ID. When plotting the observed surge data, we explicitly deduct the tide amount from sea level at each location to make the data solely representing storm surge. Also, given the significant initial differences between observed data and simulation data at all gauges, the mean of water level at each gauges was subtracted from the observed data.
 
 ## Validation Result
 ### Station 1-Aransas Pass, TX
@@ -97,10 +97,10 @@ South Padre Island CG Station, TX `ID: 8779748` experienced a storm surge of app
 
 
 ### Result Interpretation
-All gauges added observed zero surge and simulated zero surge. 
+All added gauges observed zero surge and simulated zero surge. 
 
 ## Conclusion
-This is a special example because all guages reported nothing really significant. But 
+This is a special example because all gauges reported nothing very significant. But 
 
 
 Author: Jinpai (Max) Zhao
