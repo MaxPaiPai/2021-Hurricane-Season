@@ -54,7 +54,7 @@ clawutil.data.get_remote_file(
 ```
 
 ## Storm Data
-Storm specific data for Hurricane Ida was retrieved from NOAA’s storm data archive:
+Storm specific data for Hurricane Grace was retrieved from NOAA’s storm data archive:
 http://ftp.nhc.noaa.gov/atcf/archive/2021/bal072021.dat.gz
 
 In setrun.py, data can be directly fetched by modifying codes in storm data section similar to this:
